@@ -1,0 +1,30 @@
+@import "../../styles/base.scss";
+
+.homeContainer {
+  height: 100vh;
+  width: 100vw;
+  scroll-snap-type: y mandatory;
+  overflow-x: scroll;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+    padding: 10%;
+  }
+
+  .welcome {
+    font-family: "Monoton", cursive;
+    padding-right: 30%;
+  }
+}

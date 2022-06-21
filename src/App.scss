@@ -1,0 +1,13 @@
+@import "./styles/base.scss";
+
+html{
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: $black;
+    color: $white;
+    font-family: 'Varela Round', sans-serif;
+    min-height: 100vh;
+}

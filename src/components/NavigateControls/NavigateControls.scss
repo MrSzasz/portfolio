@@ -1,0 +1,26 @@
+@import "../../styles/base.scss";
+
+.controlContainer {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  min-height: 100px;
+  height: min-content;
+  min-width: 30px;
+  width: max-content;
+
+  .controlPosition {
+    cursor: pointer;
+    transition: ease all 0.3s;
+    color: $disabled;
+    font-weight: bold;
+    user-select: none;
+
+    &:hover {
+      font-size: larger;
+      color: $white;
+      font-weight: bolder;
+    }
+  }
+}

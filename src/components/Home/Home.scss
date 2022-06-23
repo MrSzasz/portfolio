@@ -6,6 +6,10 @@
   scroll-snap-type: y mandatory;
   overflow-x: scroll;
 
+  h3, h2{
+    border-bottom: 1px solid $acc;
+ }
+
   &::-webkit-scrollbar {
     display: none;
   }

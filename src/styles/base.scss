@@ -7,7 +7,17 @@
 // $black: #0a0a0a;
 // $white: #FFFADE;
 $main: #5a0de8;
-$acc: #F21294;
+// $acc: #F21294;
+$acc: #894cda;
+// $blue:#2de2e6;
+$blue:#F21294;
 $black: #0e0e0e;
 $white: #FFFADE;
 $disabled: #303030;
+
+@mixin glowPink{
+    box-shadow: 0 0 10px $acc;
+}
+@mixin glowCyan{
+    box-shadow: 0 0 10px $blue;
+}

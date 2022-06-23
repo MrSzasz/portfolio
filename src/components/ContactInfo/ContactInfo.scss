@@ -1,0 +1,22 @@
+@import "../../styles/base.scss";
+
+.infoContactContainer {
+    width: min-content;
+    height: 80%;
+    background-color: $acc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5rem 3rem;
+    gap: 10%;
+
+    .contactLinkContainer {
+        display: flex;
+        align-items: center;
+        gap: 5%;
+    }
+
+    .contactLink {
+        cursor: pointer;
+    }
+}

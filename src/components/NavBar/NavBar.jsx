@@ -1,15 +1,17 @@
-import "./NavBar.scss"
+import "./NavBar.scss";
+import { FaCode } from 'react-icons/fa';
 
 const NavBar = () => {
   return (
     <nav>
       <div className="logo">TOMAS LEANDRO LUGO</div>
       <div className="contactLogos">
-        <div className="logoLinkedIn">LI</div>
-        <div className="logoGitHub">GH</div>
+        <a href="https://github.com/MrSzasz/portfolio" target="_blank">
+        <FaCode color="#FFFADE" size="30"/>
+        </a>
       </div>
     </nav>
-  )
-}
+  );
+};
 
-export default NavBar
+export default NavBar;

@@ -3,21 +3,41 @@ import "./ContactInfo.scss";
 const ContactInfo = () => {
   return (
     <div className="infoContactContainer">
-      <div className="contactLinkContainer">
-        <img src="https://source.unsplash.com/user/c_v_r" alt="" width="50px" height="50px" />
-        <div className="contactLink">MAIL</div>
-      </div>
-      <div className="contactLinkContainer">
-        <img src="https://source.unsplash.com/user/c_v_r" alt="" width="50px" height="50px" />
-        <div className="contactLink">WHATSAPP</div>
-      </div>
-      <div className="contactLinkContainer">
-        <img src="https://source.unsplash.com/user/c_v_r" alt="" width="50px" height="50px" />
-        <div className="contactLink">LINKEDIN</div>
-      </div>
-      <div className="contactLinkContainer">
-        <img src="https://source.unsplash.com/user/c_v_r" alt="" width="50px" height="50px" />
-        <div className="contactLink">GITHUB</div>
+      <div className="contactInfoGlowPink"></div>
+      <div className="contactInfoGlowBlue"></div>
+      <div className="infoContactLinks">
+        <a
+          href="mailto:lugoleandro@hotmail.com?subject=Portfolio"
+          target="_blank"
+          className="contactLinkContainer"
+        >
+          <img src="https://i.imgur.com/w0Grji7.png" alt="EmailLogo" />
+          <div className="contactLinkMail">MAIL</div>
+        </a>
+        <a
+          href="https://wa.link/e4glc3"
+          target="_blank"
+          className="contactLinkContainer"
+        >
+          <img src="https://i.imgur.com/md0NYzY.png" alt="WhatsAppLogo" />
+          <div className="contactLinkWhatsApp">WHATSAPP</div>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/lugotomasleandro/"
+          target="_blank"
+          className="contactLinkContainer"
+        >
+          <img src="https://i.imgur.com/NKbarCo.png" alt="LinkedInLogo" />
+          <div className="contactLinkLinkedIn">LINKEDIN</div>
+        </a>
+        <a
+          href="https://github.com/MrSzasz"
+          target="_blank"
+          className="contactLinkContainer"
+        >
+          <img src="https://i.imgur.com/pLFaWar.png" alt="GitHubLink" />
+          <div className="contactLinkGitHub">GITHUB</div>
+        </a>
       </div>
     </div>
   );

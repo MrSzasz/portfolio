@@ -6,25 +6,41 @@
      justify-content: center;
      align-items: center;
      gap: 3rem;
+     padding: 16rem !important;
 
      .topSkills {
+        width: max-content;
+        height: auto;
          position: relative;
          display: flex;
          justify-content: center;
          align-items: center;
          text-align: justify;
-       .tryGlow {
-        
-                    position: absolute;
-                    bottom: 1rem;
-                    height: 100%;
-                    width: 30%;
-                    margin-left: 2rem;
-                    @include glowCyan;
-                    border: 2px solid $blue;
-                    z-index: 1;
-                }
-         
+
+         .skillsGlowPink {
+
+             position: absolute;
+             bottom: 1rem;
+             height: 100%;
+             width: 30%;
+             margin-left: 2rem;
+             @include glowPink;
+             border: 2px solid $pink;
+             z-index: 2;
+         }
+
+         .skillsGlowBlue {
+
+             position: absolute;
+             bottom: 2rem;
+             height: 100%;
+             width: 30%;
+             margin-left: 3.5rem;
+             @include glowBlue;
+             border: 2px solid $blue;
+             z-index: 1;
+         }
+
          .infoBlock {
              position: relative;
              height: 100%;
@@ -35,28 +51,28 @@
              flex-direction: column;
              justify-content: center;
              gap: 1rem;
-             @include glowPink;
-              background-color: $black;
+             @include glowPurple;
+             background-color: $black;
              transition: ease all .3s;
-             z-index: 5 ;
-       
+             z-index: 5;
+
              &:hover {
-                .tryGlow {
-                    height: 100%;
-                    width: 30%;
-                    }
-                }
-                
-                
-                h3 {
-                    width: min-content;
-                }
-               
+                 .tryGlow {
+                     height: 100%;
+                     width: 30%;
+                 }
+             }
+
+
+             h3 {
+                 width: min-content;
+             }
+
          }
-        }
-        
-        .bottomSkills {
-            height: 40%;
+     }
+
+     .bottomSkills {
+         height: 30%;
          width: 100%;
          display: flex;
          justify-content: space-around;
@@ -64,8 +80,8 @@
 
          .techLogoBg {
              position: relative;
-             height: 100px;
-             width: 100px;
+             height: 5rem;
+             width: 5rem;
              border-radius: 50%;
              z-index: 4;
              background-image: url("https://freepngclipart.com/save-png/52960-profile-tattoo-information-artist-user-others/2400x1960");
@@ -103,3 +119,4 @@
          }
      }
  }
+

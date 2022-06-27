@@ -4,7 +4,7 @@ import "./Welcome.scss";
 const Welcome = () => {
   return (
     <section className="secWelcome" id="secWelcome">
-      <h1>Bienvenido</h1>
+      <h1>= BIENVENIDO =</h1>
       <WelcomeLogo />
     </section>
   );

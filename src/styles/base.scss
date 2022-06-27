@@ -9,15 +9,24 @@
 $main: #5a0de8;
 // $acc: #F21294;
 $acc: #894cda;
-// $blue:#2de2e6;
-$blue:#F21294;
+// $pink:#2de2e6;
+$pink:#F21294;
+$blue:#3ECADA;
 $black: #0e0e0e;
 $white: #FFFADE;
 $disabled: #303030;
 
-@mixin glowPink{
+@mixin glowPurple {
     box-shadow: 0 0 10px $acc;
 }
-@mixin glowCyan{
+
+@mixin glowText($pass) {
+    text-shadow: 0 0 10px $pass;
+}
+
+@mixin glowPink {
+    box-shadow: 0 0 10px $pink;
+}
+@mixin glowBlue {
     box-shadow: 0 0 10px $blue;
 }

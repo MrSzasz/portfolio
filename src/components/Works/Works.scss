@@ -23,8 +23,8 @@
     align-items: center;
 
 
-        
-        
+
+
 
     p {
         width: 40%;
@@ -33,13 +33,13 @@
 
     .splide__pagination {
         margin-top: 4rem;
-        
+
     }
 
     .is-initialized {
         width: 100%;
         height: 100%;
-        
+
 
         .sliderCard {
             height: 70vh;
@@ -52,9 +52,37 @@
             background-size: cover;
             background-repeat: no-repeat;
 
-            
+            .sliderInfo {
+                display: flex;
+                flex-direction: column;
+                width: 40%;
+                justify-content: center;
+                align-items: center;
+                border: 2px solid $acc;
+    @include glowPurple;
+
+                padding: 1rem;
+                margin-bottom: 1rem;
+                background-color: rgba(14, 14, 14,.9);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            backdrop-filter: blur(8.5px);
+            -webkit-backdrop-filter: blur(8.5px);
+
+                p{
+                    width: 100%;
+                }
+            }
 
 
+
+
+            .buttonWorksContainer {
+                width: 40%;
+                height: min-content;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
 
 
             .cssbuttons-io-button {
@@ -75,7 +103,7 @@
                 position: relative;
                 height: 2.8em;
                 padding-right: 3.3em;
-                
+
                 box-shadow: 3px 3px 5px #1f1f1f;
             }
 
@@ -110,9 +138,6 @@
             .cssbuttons-io-button:active .icon {
                 transform: scale(0.95);
             }
-
-
-
 
 
 
@@ -245,8 +270,8 @@
     }
 }
 
-.splide__track{
+.splide__track {
     border: 2px solid $acc;
- 
-    @include glowPink;
+
+    @include glowPurple;
 }

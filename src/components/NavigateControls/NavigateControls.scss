@@ -12,6 +12,7 @@
   z-index: 100;
 
   .controlPosition {
+    font-size: small;
     cursor: pointer;
     transition: ease all 0.3s;
     color: $disabled;
@@ -19,9 +20,17 @@
     user-select: none;
 
     &:hover {
-      font-size: larger;
+      font-size: large;
       color: $white;
       font-weight: bolder;
     }
+
+  }
+
+  .activeSec {
+    font-size: larger;
+    color: $white;
+    font-weight: bolder;
+    color: $white;
   }
 }

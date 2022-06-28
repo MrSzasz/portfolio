@@ -5,6 +5,11 @@
      scroll-behavior: smooth;
  }
 
+ * {
+     // outline: 2px solid wheat;
+
+ }
+
  ::selection {
      background-color: $acc;
      color: $white;

@@ -5,8 +5,13 @@ import "./Contact.scss";
 const Contact = () => {
   return (
     <section className="secContact" id="secContact">
-      <Form />
-      <ContactInfo />
+      <div className="contactContainer">
+        <h2>CONTACTAME</h2>
+        <div className="contactInfoContainer">
+          <Form />
+          <ContactInfo />
+        </div>
+      </div>
     </section>
   );
 };

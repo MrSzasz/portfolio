@@ -1,10 +1,36 @@
 @import "../../styles/base.scss";
 
-.secContact{
-    width: 100%;
-    height: 100%;
+.secContact {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    gap: 30%;
+    grid-column: 1/4;
+    background-image: url(https://i.imgur.com/Yn4uC7L.gif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0 10%;
+    
+    .contactContainer {
+        border: 2px solid $acc;
+        @include glowPurple;
+        h2 {
+            margin: 1rem;
+            width: max-content;
+        }
+
+        width: min-content;
+        height: min-content;
+        display: flex;
+        background-color: rgba($color: $black, $alpha: .8);
+        flex-direction: column;
+
+        .contactInfoContainer {
+            width: min-content;
+            height: min-content;
+            display: flex;
+
+        }
+    }
+
 }

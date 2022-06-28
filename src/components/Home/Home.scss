@@ -1,14 +1,16 @@
 @import "../../styles/base.scss";
 
 .homeContainer {
-  height: 100vh;
-  width: 100vw;
-  scroll-snap-type: y mandatory;
-  overflow-x: scroll;
+  height: min-content;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 10% auto 10%;
 
-  h3, h2, h1{
+  h3,
+  h2,
+  h1 {
     border-bottom: 1px solid $acc;
- }
+  }
 
   &::-webkit-scrollbar {
     display: none;
@@ -18,18 +20,9 @@
   scrollbar-width: none;
 
   section {
-    height: 100vh;
+    height: min-content;
+    padding: 10% 0;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    scroll-snap-align: start;
-    padding: 10%; 
-  }
-
-  .welcome {
-    font-family: "Monoton", cursive;
-    padding-right: 30%;
   }
 }
 
@@ -51,15 +44,47 @@
 }
 
 @keyframes bg-animation {
-    0% { transform: translate(0,0) }
-    10% { transform: translate(-5%,-5%) }
-    20% { transform: translate(-10%,5%) }
-    30% { transform: translate(5%,-10%) }
-    40% { transform: translate(-5%,15%) }
-    50% { transform: translate(-10%,5%) }
-    60% { transform: translate(15%,0) }
-    70% { transform: translate(0,10%) }
-    80% { transform: translate(-15%,0) }
-    90% { transform: translate(10%,5%) }
-    100% { transform: translate(5%,0) }
+  0% {
+    transform: translate(0, 0)
+  }
+
+  10% {
+    transform: translate(-5%, -5%)
+  }
+
+  20% {
+    transform: translate(-10%, 5%)
+  }
+
+  30% {
+    transform: translate(5%, -10%)
+  }
+
+  40% {
+    transform: translate(-5%, 15%)
+  }
+
+  50% {
+    transform: translate(-10%, 5%)
+  }
+
+  60% {
+    transform: translate(15%, 0)
+  }
+
+  70% {
+    transform: translate(0, 10%)
+  }
+
+  80% {
+    transform: translate(-15%, 0)
+  }
+
+  90% {
+    transform: translate(10%, 5%)
+  }
+
+  100% {
+    transform: translate(5%, 0)
+  }
 }

@@ -1,15 +1,17 @@
 @import "../../styles/base.scss";
 
 .controlContainer {
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 50%;
   transform: translateY(-50%);
   min-height: 100px;
   height: min-content;
-  min-width: 30px;
+  min-width: 10%;
   width: max-content;
   z-index: 100;
+  grid-column: 1/2;
+
 
   .controlPosition {
     font-size: small;

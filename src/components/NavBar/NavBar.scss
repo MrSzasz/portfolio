@@ -3,27 +3,30 @@
 nav {
     position: fixed;
     top: 0;
-    height: 10%;
+    height: 80px;
     width: 100%;
     border-bottom: 2px solid $acc;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    background-color: $black;
+    padding: 20px;
+    z-index: 10;
+    @include glowPurple;
 
-    .contactLogos {
-        width: 3rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 1rem;
-        img{
-            height: 1.5rem;
-            width: auto;
-            transition: ease all .3s;
-            &:hover{
-                transform: scale(1.1);
-            }
+
+    .logo {
+        text-decoration: none;
+        color: inherit;
+
+        &::hover {
+            color: $white !important;
+        }}
+
+        .contactLogos {
+            width: min-content;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
     }
-}

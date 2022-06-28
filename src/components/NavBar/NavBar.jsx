@@ -4,7 +4,7 @@ import { FaCode } from 'react-icons/fa';
 const NavBar = () => {
   return (
     <nav>
-      <div className="logo">TOMAS LEANDRO LUGO</div>
+      <a href="#" className="logo">TOMAS LEANDRO LUGO</a>
       <div className="contactLogos">
         <a href="https://github.com/MrSzasz/portfolio" target="_blank">
         <FaCode color="#FFFADE" size="30"/>

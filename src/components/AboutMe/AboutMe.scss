@@ -4,28 +4,39 @@
     display: flex;
     align-items: center;
     gap: 5rem;
-    padding: 15rem !important;
+    grid-column: 2/3;
+
 
     .imgAboutMe {
-        width: auto;
-        img{
+        width: 50%;
+
+        img {
             width: 100%;
         }
     }
 
     .infoAboutMe {
-        width:100%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         gap: 1rem;
-
-        h2 {
+        
+        .textInfoAboutMe{
+            
+            max-height: 80% !important;
+            h2 {
             width: 50%;
         }
 
+        p {
+            height: 100% !important;
+            width: auto;
+        }}
+
         /* From uiverse.io by @mrhyddenn */
-        button {
+        a {
+            text-align: center;
             text-transform: uppercase;
             letter-spacing: 0.1em;
             padding: 10px 30px;
@@ -35,34 +46,35 @@
             background-color: #333;
             border: none;
             color: $white;
+            text-decoration: none;
         }
 
-        button:hover {
+        a:hover {
             letter-spacing: 0.25em;
             background: $acc;
             color: $acc;
             box-shadow: 0 0 25px $acc;
         }
 
-        button::before {
+        a::before {
             content: '';
             position: absolute;
             inset: 2px;
             background: $black;
         }
 
-        button span {
+        a span {
             position: relative;
             z-index: 1;
         }
 
-        button i {
+        a i {
             position: absolute;
             inset: 0;
             display: block;
         }
 
-        button i::before {
+        a i::before {
             content: '';
             position: absolute;
             border: 2px solid $acc;
@@ -75,12 +87,12 @@
             transition: 0.5s;
         }
 
-        button:hover i::before {
+        a:hover i::before {
             width: 20px;
             left: 20%;
         }
 
-        button i::after {
+        a i::after {
             content: '';
             position: absolute;
             border: 2px solid $acc;
@@ -93,9 +105,14 @@
             transition: 0.5s;
         }
 
-        button:hover i::after {
+        a:hover i::after {
             width: 20px;
             left: 80%;
         }
     }
+}
+
+@media only screen and (max-width: 769px) {
+    .secAboutMe {flex-direction: column;
+    height: min-content !important;}
 }

@@ -27,7 +27,8 @@
             color: transparent;
             -webkit-text-stroke: 1px rgba($color: $white, $alpha: .5);
             overflow: hidden;
-
+            
+            
             &::before {
                 content: attr(data-text);
                 position: absolute;

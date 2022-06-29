@@ -1,122 +1,128 @@
 @import "../../styles/base.scss";
 
-.formContainer{
+.formContainer {
+
     form {
-    width: min-content;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    padding: 5rem 2.5rem;
-    background-color: $black;
-    z-index: 3;
-
-
-
-    input {
-        position: relative;
+        width: min-content;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 5rem 2.5rem;
         background-color: $black;
-        color: $white;
-        border: none;
-        border-bottom: 2px solid $disabled;
-        transition: ease all .3s;
+        z-index: 3;
+        // box-shadow: 7px 11px 10px -1px rgba(0,0,0,0.45);
+        box-shadow: 3px 0px 10px #000000;
 
-        &::after {
-            content: "";
+
+
+        input {
+            position: relative;
+            background-color: $black;
+            color: $white;
+            border: none;
+            border-bottom: 2px solid $disabled;
+            transition: ease all .3s;
+
+            &::after {
+                content: "";
+                color: $acc;
+                background-color: $acc;
+                height: 200px;
+                width: 100%;
+                bottom: 0;
+                left: 0;
+            }
+
+            &:focus-visible {
+                // content: "";
+                border-bottom: 2px solid $acc;
+            }
+
+        }
+
+
+
+
+
+
+        /* From uiverse.io by @mrhyddenn */
+        button {
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            padding: 10px 30px;
+            transition: 0.5s;
+            position: relative;
+            font-size: 17px;
+            background-color: #333;
+            border: none;
+            color: $white;
+            box-shadow: 0px 3px 10px #000000;
+
+        }
+
+        button:hover {
+            letter-spacing: 0.25em;
+            background: $acc;
             color: $acc;
-            background-color: $acc;
-            height: 200px;
-            width: 100%;
-            bottom: 0;
-            left: 0;
+            box-shadow: 0 0 25px $acc;
         }
 
-        &:focus-visible {
-            // content: "";
-            border-bottom: 2px solid $acc;
+        button::before {
+            content: '';
+            position: absolute;
+            inset: 2px;
+            background: $black;
         }
 
+        button span {
+            position: relative;
+            z-index: 1;
+        }
+
+        button i {
+            position: absolute;
+            inset: 0;
+            display: block;
+        }
+
+        button i::before {
+            content: '';
+            position: absolute;
+            border: 2px solid $acc;
+            width: 7px;
+            height: 4px;
+            top: -3.5px;
+            left: 80%;
+            background: $black;
+            transform: translateX(-50%);
+            transition: 0.5s;
+        }
+
+        button:hover i::before {
+            width: 20px;
+            left: 20%;
+        }
+
+        button i::after {
+            content: '';
+            position: absolute;
+            border: 2px solid $acc;
+            width: 7px;
+            height: 4px;
+            bottom: -3.5px;
+            left: 20%;
+            background: $black;
+            transform: translateX(-50%);
+            transition: 0.5s;
+        }
+
+        button:hover i::after {
+            width: 20px;
+            left: 80%;
+        }
     }
-
-
-
-
-
-
-    /* From uiverse.io by @mrhyddenn */
-    button {
-        text-transform: uppercase;
-        letter-spacing: 0.1em;
-        padding: 10px 30px;
-        transition: 0.5s;
-        position: relative;
-        font-size: 17px;
-        background-color: #333;
-        border: none;
-        color: $white;
-    }
-
-    button:hover {
-        letter-spacing: 0.25em;
-        background: $acc;
-        color: $acc;
-        box-shadow: 0 0 25px $acc;
-    }
-
-    button::before {
-        content: '';
-        position: absolute;
-        inset: 2px;
-        background: $black;
-    }
-
-    button span {
-        position: relative;
-        z-index: 1;
-    }
-
-    button i {
-        position: absolute;
-        inset: 0;
-        display: block;
-    }
-
-    button i::before {
-        content: '';
-        position: absolute;
-        border: 2px solid $acc;
-        width: 7px;
-        height: 4px;
-        top: -3.5px;
-        left: 80%;
-        background: $black;
-        transform: translateX(-50%);
-        transition: 0.5s;
-    }
-
-    button:hover i::before {
-        width: 20px;
-        left: 20%;
-    }
-
-    button i::after {
-        content: '';
-        position: absolute;
-        border: 2px solid $acc;
-        width: 7px;
-        height: 4px;
-        bottom: -3.5px;
-        left: 20%;
-        background: $black;
-        transform: translateX(-50%);
-        transition: 0.5s;
-    }
-
-    button:hover i::after {
-        width: 20px;
-        left: 80%;
-    }
-}}
+}
 
 input:focus,
 select:focus,
@@ -125,19 +131,38 @@ button:focus {
     outline: none;
 }
 
-.toastStyle{
+.toastStyle {
     background-color: $black !important;
     color: $white !important;
 }
-.toastStyleSuccess{
+
+.toastStyleSuccess {
     border: 2px solid #008000;
 }
-.toastStyleError{
+
+.toastStyleError {
     border: 2px solid #ff0000;
 }
 
-.sendButton{
+.sendButton {
     text-decoration: none;
     border: none !important;
 
+}
+
+// ============================== AUTOCOMPLETE INPUT ============================== //
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    border-bottom: 2px solid $disabled;
+    -webkit-text-fill-color: $white !important;
+    -webkit-box-shadow: 0 0 0px 1000px $black inset;
+    transition: background-color 5000s ease-in-out 0s;
 }

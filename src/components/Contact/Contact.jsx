@@ -6,7 +6,9 @@ const Contact = () => {
   return (
     <section className="secContact" id="secContact">
       <div className="contactContainer">
-        <h2>CONTACTAME</h2>
+        <div className="contactIntro">
+          <h2>CONTACTAME</h2>
+        </div>
         <div className="contactInfoContainer">
           <Form />
           <ContactInfo />

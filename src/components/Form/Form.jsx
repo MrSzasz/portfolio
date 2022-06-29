@@ -42,8 +42,6 @@ const Form = () => {
 
   return (
     <div className="formContainer">
-      <div className="contactGlowPink"></div>
-      <div className="contactGlowBlue"></div>
       <form id="form">
         <input
           type="text"
@@ -54,15 +52,15 @@ const Form = () => {
         />
         <input
           type="email"
-          name="email"
-          id="email"
+          name="to_email"
+          id="to_email"
           placeholder="Inserte su email"
           required
         />
         <input
           type="text"
-          name="message"
-          id="message"
+          name="to_message"
+          id="to_message"
           placeholder="¡Hola! Me comunicaba para..."
           required
         />

@@ -1,0 +1,84 @@
+ // ==============================  IMPORT  ============================== //
+
+ @import "../../styles/base.scss";
+
+
+ // ==============================  CONTACT LINKS CONTENT  ============================== //
+
+ .contactLinkContainer {
+     width: 120px;
+     min-width: 50%;
+     display: flex;
+     align-items: center;
+     justify-content: start;
+     gap: 1rem;
+     cursor: pointer;
+     transition: ease all .3s;
+     text-decoration: none;
+     color: inherit;
+     @include glowText($background);
+     z-index: 4;
+
+     &:hover {
+         color: inherit !important;
+     }
+
+     .contactLinkMail,
+     .contactLinkWhatsApp,
+     .contactLinkLinkedIn,
+     .contactLinkGitHub {
+         position: relative;
+
+         &::after {
+             content: attr(data-contact);
+             position: absolute;
+             height: 100%;
+             width: 100%;
+         }
+     }
+
+     &:hover {
+         transform: scale(1.1);
+
+         .contactLinkMail {
+             @include glowText(#DE4032);
+             transition: ease all .3s;
+         }
+
+         .contactLinkWhatsApp {
+             @include glowText(#47C155);
+             transition: ease all .3s;
+         }
+
+         .contactLinkLinkedIn {
+             @include glowText(#0071AE);
+             transition: ease all .3s;
+         }
+
+         .contactLinkGitHub {
+             @include glowText(#F2F2F2);
+             transition: ease all .3s;
+         }
+     }
+ }
+
+
+ // ==============================  MEDIA QUERIES  ============================== //
+
+ @media only screen and (max-width: 425px) {
+     .contactLinkContainer {
+         width: max-content !important;
+         min-width: 0;
+         justify-content: space-between;
+         padding: 1rem;
+
+         .contactLinkMail,
+         .contactLinkWhatsApp,
+         .contactLinkLinkedIn,
+         .contactLinkGitHub {
+             &::after {
+                 content: "";
+             }
+         }
+     }
+ }

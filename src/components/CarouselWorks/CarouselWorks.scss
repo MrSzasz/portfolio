@@ -1,0 +1,41 @@
+ // ==============================  IMPORT  ============================== //
+
+ @import "../../styles/base.scss";
+
+
+ // ==============================  WORKS CONTENT  ============================== //
+
+ .carouselContainer {
+     width: 100%;
+     height: min-content;
+     border: 2px solid $main;
+     @include glowPurple;
+
+     .carousel-caption {
+         height: min-content;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         background-color: rgba($color: $background, $alpha: .8);
+         border: 2px solid $main;
+         @include glowPurple;
+         top: 50%;
+         transform: translateY(-50%);
+
+         p {
+             font-style: italic;
+         }
+
+         .buttonWorksContainer {
+             width: 100%;
+             display: flex;
+             justify-content: space-around;
+             align-items: center;
+
+             a {
+                 text-decoration: none;
+             }
+         }
+     }
+ }

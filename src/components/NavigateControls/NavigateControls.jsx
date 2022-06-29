@@ -12,6 +12,8 @@ import { FaCode } from "react-icons/fa";
 
 // ----------  COMPONENTS  ---------- //
 
+import LinkItem from "../LinkItem/LinkItem";
+
 
 const NavigateControls = () => {
 
@@ -26,7 +28,6 @@ const NavigateControls = () => {
     $("#linkListContainer").fadeToggle("fast", "linear");
   }
 
-  
   // ----------  RETURN  ---------- //
 
   return (
@@ -37,31 +38,11 @@ const NavigateControls = () => {
             <AiOutlineClose size={25} />
           </button>
         </li>
-        <li className="controlPosition">
-          <a id="a" onClick={navShow} href="#">
-            INICIO
-          </a>
-        </li>
-        <li className="controlPosition">
-          <a onClick={navShow} href="#secAboutMe">
-            SOBRE MI
-          </a>
-        </li>
-        <li className="controlPosition">
-          <a onClick={navShow} href="#secSkills">
-            SKILLS
-          </a>
-        </li>
-        <li className="controlPosition">
-          <a onClick={navShow} href="#secWorks">
-            PROYECTOS
-          </a>
-        </li>
-        <li className="controlPosition">
-          <a onClick={navShow} href="#secContact">
-            CONTACTO
-          </a>
-        </li>
+        <LinkItem fonClick={navShow} href="#" content="INICIO" />
+        <LinkItem fonClick={navShow} href="#secAboutMe" content="SOBRE MI" />
+        <LinkItem fonClick={navShow} href="#secSkills" content="SKILLS" />
+        <LinkItem fonClick={navShow} href="#secWorks" content="PROYECTOS" />
+        <LinkItem fonClick={navShow} href="#secContact" content="CONTACTO" />
         <li className="controlPosition">
           <a
             onClick={navShow}

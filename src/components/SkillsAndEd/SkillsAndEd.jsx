@@ -1,17 +1,16 @@
 // =========================  STYLES  ========================= //
 
 import "./SkillsAndEd.scss";
-import "bootstrap/dist/css/bootstrap.min.css";
 
 // =========================  LIBRARIES  ========================= //
 
-import ProgressBar from "react-bootstrap/ProgressBar";
 import { BsCode } from "react-icons/bs";
+import SkillsBlock from "../SkillsBlock/SkillsBlock";
+import SkillBar from "../SkillBar/SkillBar";
 
 // =========================  CUSTOM IMPORTS  ========================= //
 
 // ----------  COMPONENTS  ---------- //
-
 
 const SkillsAndEd = () => {
 
@@ -30,52 +29,16 @@ const SkillsAndEd = () => {
         </p>
       </div>
       <div className="skillsLevel">
-        <div className="skillsBlock">
-          <div className="skillBar">
-            <div className="skillInfo">
-              <h6>HTML</h6>
-              <h6>80%</h6>
-            </div>
-            <ProgressBar now={80} />
-          </div>
-          <div className="skillBar">
-            <div className="skillInfo">
-              <h6>CSS</h6>
-              <h6>75%</h6>
-            </div>
-            <ProgressBar now={75} />
-          </div>
-          <div className="skillBar">
-            <div className="skillInfo">
-              <h6>SASS</h6>
-              <h6>65%</h6>
-            </div>
-            <ProgressBar now={65} />
-          </div>
-        </div>
-        <div className="skillsBlock">
-          <div className="skillBar">
-            <div className="skillInfo">
-              <h6>BOOTSTRAP</h6>
-              <h6>80%</h6>
-            </div>
-            <ProgressBar now={80} />
-          </div>
-          <div className="skillBar">
-            <div className="skillInfo">
-              <h6>JAVASCRIPT</h6>
-              <h6>75%</h6>
-            </div>
-            <ProgressBar now={75} />
-          </div>
-          <div className="skillBar">
-            <div className="skillInfo">
-              <h6>REACTJS</h6>
-              <h6>70%</h6>
-            </div>
-            <ProgressBar now={70} />
-          </div>
-        </div>
+        <SkillsBlock>
+          <SkillBar name="HTML" value="80" />
+          <SkillBar name="CSS" value="75" />
+          <SkillBar name="SASS" value="65" />
+        </SkillsBlock>
+        <SkillsBlock>
+          <SkillBar name="BOOTSTRAP" value="80" />
+          <SkillBar name="JAVASCRIPT" value="75" />
+          <SkillBar name="REACTJS" value="75" />
+        </SkillsBlock>
       </div>
     </section>
   );

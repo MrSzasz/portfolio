@@ -6,12 +6,11 @@ import "./Form.scss";
 
 import { useEffect } from "react";
 import toast, { Toaster } from "react-hot-toast";
+import FormInput from "../FormInput/FormInput";
 
 // =========================  CUSTOM IMPORTS  ========================= //
 
-
 const Form = () => {
-
   // ----------  TOAST  ---------- //
 
   const successToast = () =>
@@ -22,7 +21,6 @@ const Form = () => {
     toast.error("Error, intente nuevamente", {
       className: "toastStyle toastStyleError",
     });
-
 
   // ----------  EMAILJS  ---------- //
 
@@ -54,31 +52,24 @@ const Form = () => {
   }, []);
 
   return (
-
     // ----------  RETURN  ---------- //
-    
+
     <div className="formContainer">
       <form id="form">
-        <input
+        <FormInput
           type="text"
-          name="to_name"
-          id="to_name"
+          inputName="to_name"
           placeholder="Inserte su nombre"
-          required
         />
-        <input
+        <FormInput
           type="email"
-          name="to_email"
-          id="to_email"
+          inputName="to_email"
           placeholder="Inserte su email"
-          required
         />
-        <input
+        <FormInput
           type="text"
-          name="to_message"
-          id="to_message"
+          inputName="to_message"
           placeholder="¡Hola! Me comunicaba para..."
-          required
         />
         <button>
           <input

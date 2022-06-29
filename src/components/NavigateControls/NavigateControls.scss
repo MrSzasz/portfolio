@@ -45,34 +45,6 @@
        font-weight: bolder;
      }
    }
-
-   .controlPosition {
-     font-size: small;
-     cursor: pointer;
-     transition: ease all 0.3s;
-     color: $disabled;
-     font-weight: bold;
-     user-select: none;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-
-     a {
-       text-decoration: none;
-     }
-
-     button {
-       background-color: $background;
-       border: none;
-       color: $font;
-       font-size: bolder;
-       transition: ease all .3s;
-
-       &:hover {
-         color: #ff0000;
-       }
-     }
-   }
  }
 
 
@@ -95,14 +67,6 @@
        justify-content: center;
        text-align: center;
        padding: 10% 0;
-
-       .controlPosition {
-         height: 100%;
-
-         a {
-           font-size: 1.2rem;
-         }
-       }
      }
    }
  }

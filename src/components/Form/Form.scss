@@ -22,29 +22,6 @@
              border: none !important;
          }
 
-         input {
-             position: relative;
-             background-color: $background;
-             color: $font;
-             border: none;
-             border-bottom: 2px solid $disabled;
-             transition: ease all .3s;
-
-             &::after {
-                 content: "";
-                 color: $main;
-                 background-color: $main;
-                 height: 200px;
-                 width: 100%;
-                 bottom: 0;
-                 left: 0;
-             }
-
-             &:focus-visible {
-                 border-bottom: 2px solid $main;
-             }
-         }
-
          /* From uiverse.io by @mrhyddenn */
          button {
              text-transform: uppercase;

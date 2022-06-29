@@ -1,0 +1,69 @@
+ // ==============================  IMPORT  ============================== //
+
+ @import "../../styles/base.scss";
+
+
+ // ==============================  WORK CARD CONTENT  ============================== //
+
+ .workCard {
+     width: 100%;
+     height: 100%;
+     border: 2px solid $main;
+     @include glowPurple;
+
+     .workCardBg {
+         background-position: center;
+         background-size: cover;
+         background-repeat: no-repeat;
+
+         .workCardContent {
+             background-color: rgba($color: $background, $alpha: .8);
+
+             h3 {
+                 width: 100%;
+                 text-align: center;
+                 padding: 1rem;
+             }
+
+             p {
+                 padding: 1rem;
+             }
+
+             .buttonWorksContainer {
+                 display: flex;
+                 flex-direction: column;
+                 justify-content: center;
+                 align-items: center;
+                 height: min-content;
+                 gap: 1rem;
+                 padding: 1rem;
+                 text-align: center;
+
+                 a {
+                     text-decoration: none;
+                 }
+
+                 .cssbuttons-io-button {
+                     width: 80%;
+                 }
+             }
+         }
+     }
+
+     .workCardIDKHOW {
+         background-image: url(https://i.imgur.com/Cyyp2cZ.png);
+         background-position: right;
+     }
+
+     .workCardMMR {
+         background-image: url(https://i.imgur.com/9iBKq9h.png);
+     }
+
+     .workCardNM {
+         background-image: url(https://i.imgur.com/WsR7LtZ.png);
+     }
+
+     .workCardMF {
+         background-image: url(https://i.imgur.com/jh6AVOy.png);
+     }
+ }

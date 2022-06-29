@@ -7,6 +7,10 @@ import "./ContactInfo.scss";
 import { FiMail } from "react-icons/fi";
 import { BsWhatsapp, BsLinkedin, BsGithub } from "react-icons/bs";
 
+// ----------  COMPONENTS  ---------- //
+
+import ContactLink from "../ContactLink/ContactLink";
+
 
 const ContactInfo = () => {
   
@@ -15,42 +19,10 @@ const ContactInfo = () => {
   return (
     <div className="infoContactContainer">
       <div className="infoContactLinks">
-        <a
-          href="mailto:lugoleandro@hotmail.com?subject=Portfolio"
-          target="_blank"
-          className="contactLinkContainer"
-        >
-          <div data-contact="&nbsp;MAIL" className="contactLinkMail">
-            <FiMail size="30" />
-          </div>
-        </a>
-        <a
-          href="https://wa.link/e4glc3"
-          target="_blank"
-          className="contactLinkContainer"
-        >
-          <div data-contact="&nbsp;WHATSAPP" className="contactLinkWhatsApp">
-            <BsWhatsapp size="30" />
-          </div>
-        </a>
-        <a
-          href="https://www.linkedin.com/in/lugotomasleandro/"
-          target="_blank"
-          className="contactLinkContainer"
-        >
-          <div data-contact="&nbsp;LINKEDIN" className="contactLinkLinkedIn">
-            <BsLinkedin size="30" />
-          </div>
-        </a>
-        <a
-          href="https://github.com/MrSzasz"
-          target="_blank"
-          className="contactLinkContainer"
-        >
-          <div data-contact="&nbsp;GITHUB" className="contactLinkGitHub">
-            <BsGithub size="30" />
-          </div>
-        </a>
+        <ContactLink href="mailto:lugoleandro@hotmail.com?subject=Portfolio" dataContact="&nbsp;MAIL"><FiMail size="30" /></ContactLink>
+        <ContactLink href="https://wa.link/e4glc3" dataContact="&nbsp;WHATSAPP"><BsWhatsapp size="30" /></ContactLink>
+        <ContactLink href="https://www.linkedin.com/in/lugotomasleandro/" dataContact="&nbsp;LINKEDIN"><BsLinkedin size="30" /></ContactLink>
+        <ContactLink href="https://github.com/MrSzasz" dataContact="&nbsp;GITHUB"><BsGithub size="30" /></ContactLink>
       </div>
     </div>
   );

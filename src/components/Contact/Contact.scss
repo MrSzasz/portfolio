@@ -10,6 +10,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     padding: 0 10%;
+    // width: 100px !important;
 
     .contactContainer {
         .contactIntro {
@@ -40,5 +41,20 @@
 
         }
     }
+}
 
+@media only screen and (max-width: 425px) {
+
+    .secContact {
+        .contactContainer {
+            .contactIntro {
+                display: flex;
+                justify-content: center;
+            }
+
+            .contactInfoContainer {
+                flex-direction: column;
+            }
+        }
+    }
 }

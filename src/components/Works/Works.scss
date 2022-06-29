@@ -29,9 +29,10 @@
         height: min-content;
         border: 2px solid $acc;
         @include glowPurple;
-        
-        
+
+
         .carousel-caption {
+            height: min-content;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -47,9 +48,9 @@
             }
 
             .buttonWorksContainer {
-                width: 60%;
+                width: 100%;
                 display: flex;
-                justify-content: space-between;
+                justify-content: space-around;
                 align-items: center;
 
                 a {
@@ -207,4 +208,324 @@
             0 0 0 6px #FA9305,
             0 0 0 9px #853605;
     }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 426px) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .secWorks {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-column: 2/3;
+        outline: 2px red;
+
+        .carouselContainer {
+            width: 100%;
+            height: min-content;
+            border: 2px solid $acc;
+            @include glowPurple;
+
+
+            .carousel-caption {
+                height: min-content;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-color: rgba($color: $black, $alpha: .8);
+                border: 2px solid $acc;
+                @include glowPurple;
+                top: 50%;
+                transform: translateY(-50%);
+
+                p {
+                    font-style: italic;
+                }
+
+                .buttonWorksContainer {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+
+                    a {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+
+    }
+
+
+    .idkhowItem {
+
+        background-image: url(https://i.imgur.com/WHS7N3z.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+
+
+    // ================================================================= //
+
+
+    .btn-idkhow {
+        border: 2px solid #312F32;
+        box-shadow: 5px 5px 5px #312F32;
+        border-radius: 20px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: ease .20s all;
+        background-color: #E8E7D5;
+        line-height: 0;
+        padding: 1.5rem;
+
+        font: {
+            family: IDKHOW;
+            size: 20px;
+        }
+
+        &:hover {
+            font-size: 21px;
+            background-color: #312F32;
+            color: #E8E7D5;
+        }
+    }
+
+
+
+    // ================================================================= //
+
+
+    .cssbuttons-io-button {
+        background: #e75d44;
+        color: white;
+        font-family: inherit;
+        padding: 0.35em;
+        padding-left: 1.2em;
+        font-size: 17px;
+        font-weight: 500;
+        border-radius: 30px;
+        border: none;
+        letter-spacing: 0.05em;
+        display: flex;
+        align-items: center;
+        box-shadow: inset 0 0 1.6em -0.6em #DE5C1F;
+        overflow: hidden;
+        position: relative;
+        height: 2.8em;
+        padding-right: 3.3em;
+        box-shadow: 3px 3px 5px #1f1f1f;
+    }
+
+    .cssbuttons-io-button .icon {
+        background: white;
+        margin-left: 1em;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 2.2em;
+        width: 2.2em;
+        border-radius: 30px;
+        right: 0.3em;
+        transition: all 0.3s;
+    }
+
+    .cssbuttons-io-button:hover .icon {
+        width: calc(100% - 0.6em);
+    }
+
+    .cssbuttons-io-button .icon svg {
+        width: 1.1em;
+        transition: transform 0.3s;
+        color: #DE5C1F;
+    }
+
+    .cssbuttons-io-button:hover .icon svg {
+        transform: translateX(0.1em);
+    }
+
+    .cssbuttons-io-button:active .icon {
+        transform: scale(0.95);
+    }
+
+
+
+
+    // ================================================================= //
+    .btn-nm {
+        font-family: NightMarket;
+        padding: 13px;
+        border: 2px solid #1E1E1E;
+        border-radius: 10px;
+        text-align: center;
+        transition: ease all .25s;
+        background-color: #121212;
+        color: #fbfbfd;
+
+        &:hover {
+            background-color: #1E1E1E;
+            color: #fbfbfd;
+            border: 2px solid #6600cc;
+        }
+    }
+
+    // =======================================================
+    .btn-mf {
+        font-family: MoonFarm;
+        background-color: rgba(255, 255, 255, 0.35);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(8.5px);
+        -webkit-backdrop-filter: blur(8.5px);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        border-radius: 5px;
+        box-shadow: 11px 11px 30px 0px rgba(0, 0, 0, 0.75);
+        padding: 10px 20px 10px 20px;
+        border: 2px solid #1e1e1e;
+        color: #1e1e1e;
+        box-shadow: 0 0 0 3px #5B2B2A,
+            0 0 0 6px #FA9305,
+            0 0 0 9px #853605;
+        transition: ease all .20s;
+
+        &:hover {
+            transform: scale(1.05);
+            color: #1E1E1E !important;
+        }
+
+        &:focus {
+            box-shadow:
+                0 0 0 3px #5B2B2A,
+                0 0 0 6px #FA9305,
+                0 0 0 9px #853605;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+.minWorkContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    .workCard {
+        width: 100%;
+        height: 100%;
+        border: 2px solid $acc;
+        @include glowPurple;
+        
+        .workCardBg {
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            
+            .workCardContent{ 
+                
+                background-color: rgba($color: $black, $alpha: .8);
+            
+            h3 {
+                width: 100%;
+                text-align: center;
+                padding: 1rem;
+            }
+
+            p {
+                padding: 1rem;
+            }
+
+            .buttonWorksContainer {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: min-content;
+                gap: 1rem;
+                padding: 1rem;
+                text-align: center;
+
+                a {
+                    text-decoration: none;
+                }
+
+                .cssbuttons-io-button {
+                    width: 80%;
+                }
+
+            }}
+        }
+
+        .workCardIDKHOW {
+            background-image: url(https://i.imgur.com/Cyyp2cZ.png);
+            background-position: right;
+        }
+
+        .workCardMMR {
+            background-image: url(https://i.imgur.com/9iBKq9h.png);
+        }
+
+        .workCardNM {
+            background-image: url(https://i.imgur.com/WsR7LtZ.png);
+        }
+
+        .workCardMF {
+            background-image: url(https://i.imgur.com/jh6AVOy.png);
+        }
+        
+    }
+
+
 }

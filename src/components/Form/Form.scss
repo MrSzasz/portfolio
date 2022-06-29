@@ -166,3 +166,15 @@ select:-webkit-autofill:focus {
     -webkit-box-shadow: 0 0 0px 1000px $black inset;
     transition: background-color 5000s ease-in-out 0s;
 }
+
+
+@media only screen and (max-width: 425px) {
+
+    .formContainer {
+
+        form {
+            width: 100%;
+            box-shadow: 0px 0px 10px #000000;
+        }
+    }
+}

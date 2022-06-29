@@ -3,10 +3,11 @@
  html {
      font-size: 16px;
      scroll-behavior: smooth;
+    //  outline: 2px solid green;
  }
 
  * {
-     // outline: 2px solid wheat;
+    //  outline: 2px solid wheat;
 
  }
 
@@ -19,5 +20,15 @@
      background-color: $black;
      color: $white;
      font-family: "Varela Round", sans-serif;
-     min-height: 100vh;
  }
+
+ ::-webkit-scrollbar {
+    width: 5px;               /* width of the entire scrollbar */
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;        /* color of the tracking area */
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: $acc;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+  }

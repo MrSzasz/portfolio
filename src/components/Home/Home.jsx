@@ -12,7 +12,6 @@ const Home = () => {
   return (
     <>
       <NavigateControls />
-      {/* <div className="bg"></div> */}
       <div className="homeContainer">
         <Welcome />
         <AboutMe />

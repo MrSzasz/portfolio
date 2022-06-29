@@ -11,8 +11,8 @@ const ContactInfo = () => {
           target="_blank"
           className="contactLinkContainer"
         >
-          <div className="contactLinkMail">
-            <FiMail size="30" /> MAIL
+          <div data-contact="&nbsp;MAIL" className="contactLinkMail">
+            <FiMail size="30" />
           </div>
         </a>
         <a
@@ -20,8 +20,8 @@ const ContactInfo = () => {
           target="_blank"
           className="contactLinkContainer"
         >
-          <div className="contactLinkWhatsApp">
-            <BsWhatsapp size="30" /> WHATSAPP
+          <div data-contact="&nbsp;WHATSAPP" className="contactLinkWhatsApp">
+            <BsWhatsapp size="30" />
           </div>
         </a>
         <a
@@ -29,8 +29,8 @@ const ContactInfo = () => {
           target="_blank"
           className="contactLinkContainer"
         >
-          <div className="contactLinkLinkedIn">
-            <BsLinkedin size="30" /> LINKEDIN
+          <div data-contact="&nbsp;LINKEDIN" className="contactLinkLinkedIn">
+            <BsLinkedin size="30" /> 
           </div>
         </a>
         <a
@@ -38,8 +38,8 @@ const ContactInfo = () => {
           target="_blank"
           className="contactLinkContainer"
         >
-          <div className="contactLinkGitHub">
-            <BsGithub size="30" /> GITHUB
+          <div data-contact="&nbsp;GITHUB" className="contactLinkGitHub">
+            <BsGithub size="30" />
           </div>
         </a>
       </div>

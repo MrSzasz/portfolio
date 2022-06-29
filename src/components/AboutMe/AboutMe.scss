@@ -21,18 +21,21 @@
         flex-direction: column;
         justify-content: center;
         gap: 1rem;
-        
-        .textInfoAboutMe{
-            
-            max-height: 80% !important;
-            h2 {
-            width: 50%;
-        }
 
-        p {
-            height: 100% !important;
-            width: auto;
-        }}
+        .textInfoAboutMe {
+
+            max-height: 80% !important;
+            width: 100%;
+
+            h2 {
+                width: 50%;
+            }
+
+            p {
+                height: 100%;
+                width: 100%;
+            }
+        }
 
         /* From uiverse.io by @mrhyddenn */
         a {
@@ -115,6 +118,29 @@
 }
 
 @media only screen and (max-width: 769px) {
-    .secAboutMe {flex-direction: column;
-    height: min-content !important;}
+    .secAboutMe {
+        flex-direction: column;
+        height: min-content !important;
+    }
+}
+
+@media only screen and (max-width: 426px) {
+    .secAboutMe {
+        .imgAboutMe {
+            width: 100%;
+        }
+
+        .infoAboutMe {
+            .textInfoAboutMe {
+                h2 {
+                    width: 100%;
+                }
+
+                p {
+                    text-align: justify;
+                }
+            }
+
+        }
+    }
 }

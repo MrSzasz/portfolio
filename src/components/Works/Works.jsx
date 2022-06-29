@@ -1,20 +1,33 @@
+// =========================  STYLES  ========================= //
+
 import "./Works.scss";
+
+// =========================  LIBRARIES  ========================= //
+
 import { useEffect, useState } from "react";
 import { Carousel } from "react-bootstrap";
+
+// =========================  CUSTOM IMPORTS  ========================= //
+
+// ----------  COMPONENTS  ---------- //
+
 
 const Works = () => {
   const [sWidth, setSWidth] = useState();
 
 
-  useEffect(() => {
-    
-  let width = window.screen.width;
-    setSWidth(width);
+  // ----------  GET WIDTH  ---------- //
 
-  })
-  
+  useEffect(() => {
+    let width = window.screen.width;
+    setSWidth(width);
+  });
 
   return (
+
+
+    // ----------  RETURN  ---------- //
+    
     <section className="secWorks" id="secWorks">
       {sWidth >= 425 ? (
         <div className="carouselContainer">
@@ -174,40 +187,15 @@ const Works = () => {
           </Carousel>
         </div>
       ) : (
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         <div className="minWorkContainer">
           <div className="workCard">
             <div className="workCardBg workCardIDKHOW">
               <div className="workCardContent">
                 <h3>= IDKHOW Band =</h3>
                 <p>
-                  "En esta página encontraras toda la información relacionada con
-                  la banda IDKHOW, desde su historia, noticias, su discografía
-                  completa y el tour actualizado."
+                  "En esta página encontraras toda la información relacionada
+                  con la banda IDKHOW, desde su historia, noticias, su
+                  discografía completa y el tour actualizado."
                 </p>
                 <div className="buttonWorksContainer">
                   <a

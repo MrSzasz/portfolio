@@ -1,38 +1,108 @@
-@import "../../styles/base.scss";
+ // ==============================  IMPORT  ============================== //
 
-.controlContainer {
-  position: fixed;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  min-height: 100px;
-  height: min-content;
-  min-width: 10%;
-  width: max-content;
-  z-index: 100;
-  grid-column: 1/2;
+ @import "../../styles/base.scss";
 
 
-  .controlPosition {
-    font-size: small;
-    cursor: pointer;
-    transition: ease all 0.3s;
-    color: $disabled;
-    font-weight: bold;
-    user-select: none;
+ // ==============================  CONTROLS CONTENT  ============================== //
 
-    &:hover {
-      font-size: large;
-      color: $white;
-      font-weight: bolder;
-    }
+ .controlContainer {
+   position: fixed;
+   right: 0;
+   bottom: 0;
+   height: 100%;
+   width: 25%;
+   z-index: 100;
+   background-color: $background;
+   padding: 2rem;
+   border-left: 2px solid $main;
+   @include glowPurple;
+   display: none;
 
-  }
+   .linkListContainer {
+     width: min-content;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     height: 100%;
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     display: none;
+     padding: 0;
+   }
 
-  .activeSec {
-    font-size: larger;
-    color: $white;
-    font-weight: bolder;
-    color: $white;
-  }
-}
+   a {
+     font-size: 1.5rem;
+     color: $font;
+     transition: ease all 0.3s;
+
+     &:hover {
+       font-size: 1.7rem;
+       color: $main;
+       font-weight: bolder;
+     }
+   }
+
+   .controlPosition {
+     font-size: small;
+     cursor: pointer;
+     transition: ease all 0.3s;
+     color: $disabled;
+     font-weight: bold;
+     user-select: none;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+
+     a {
+       text-decoration: none;
+     }
+
+     button {
+       background-color: $background;
+       border: none;
+       color: $font;
+       font-size: bolder;
+       transition: ease all .3s;
+
+       &:hover {
+         color: #ff0000;
+       }
+     }
+   }
+ }
+
+
+ // ==============================  MEDIA QUERIES  ============================== //
+
+ @media only screen and (max-width: 769px) {
+   .controlContainer {
+     width: 100%;
+     background-color: $background;
+     position: fixed;
+     overflow: hidden;
+     display: none;
+     border: none;
+     box-shadow: none;
+
+     ul {
+       height: 90% !important;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       text-align: center;
+       padding: 10% 0;
+
+       .controlPosition {
+         height: 100%;
+
+         a {
+           font-size: 1.2rem;
+         }
+       }
+     }
+   }
+ }

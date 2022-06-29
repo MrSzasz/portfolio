@@ -1,87 +1,25 @@
-@import "../../styles/base.scss";
+ // ==============================  IMPORT  ============================== //
 
-.homeContainer {
-  height: min-content;
-  width: 100%;
-  display: grid;
-  grid-template-columns: 10% auto 10%;
-
-  h3,
-  h2,
-  h1 {
-    border-bottom: 1px solid $acc;
-  }
-
-  &::-webkit-scrollbar {
-    display: none;
-  }
-
-  section {
-    height: min-content;
-    padding: 10% 0;
-    width: 100%;
-  }
-}
+ @import "../../styles/base.scss";
 
 
-.bg {
-  position: fixed;
-  top: -50%;
-  left: -50%;
-  right: -50%;
-  bottom: -50%;
-  width: 200%;
-  height: 200vh;
-  background: transparent url('http://assets.iceable.com/img/noise-transparent.png') repeat 0 0;
-  background-repeat: repeat;
-  animation: bg-animation .2s infinite;
-  opacity: .9;
-  visibility: visible;
-  z-index: -1;
-}
+// ==============================  HOME CONTENT  ============================== //
 
-@keyframes bg-animation {
-  0% {
-    transform: translate(0, 0)
-  }
+ .homeContainer {
+   height: min-content;
+   width: 100%;
+   display: grid;
+   grid-template-columns: 10% auto 10%;
 
-  10% {
-    transform: translate(-5%, -5%)
-  }
+   h3,
+   h2,
+   h1 {
+     border-bottom: 1px solid $main;
+   }
 
-  20% {
-    transform: translate(-10%, 5%)
-  }
-
-  30% {
-    transform: translate(5%, -10%)
-  }
-
-  40% {
-    transform: translate(-5%, 15%)
-  }
-
-  50% {
-    transform: translate(-10%, 5%)
-  }
-
-  60% {
-    transform: translate(15%, 0)
-  }
-
-  70% {
-    transform: translate(0, 10%)
-  }
-
-  80% {
-    transform: translate(-15%, 0)
-  }
-
-  90% {
-    transform: translate(10%, 5%)
-  }
-
-  100% {
-    transform: translate(5%, 0)
-  }
-}
+   section {
+     height: min-content;
+     padding: 80px 0;
+     width: 100%;
+   }
+ }

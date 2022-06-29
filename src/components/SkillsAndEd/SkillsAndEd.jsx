@@ -1,11 +1,23 @@
+// =========================  STYLES  ========================= //
 
 import "./SkillsAndEd.scss";
-
-import { BsCode } from "react-icons/bs";
-import ProgressBar from "react-bootstrap/ProgressBar";
 import "bootstrap/dist/css/bootstrap.min.css";
 
+// =========================  LIBRARIES  ========================= //
+
+import ProgressBar from "react-bootstrap/ProgressBar";
+import { BsCode } from "react-icons/bs";
+
+// =========================  CUSTOM IMPORTS  ========================= //
+
+// ----------  COMPONENTS  ---------- //
+
+
 const SkillsAndEd = () => {
+
+  
+  // ----------  RETURN  ---------- //
+
   return (
     <section className="secSkills" id="secSkills">
       <div className="infoSkills">
@@ -13,8 +25,8 @@ const SkillsAndEd = () => {
           <BsCode /> Front-End
         </h2>
         <p>
-        Desarrollo Front-End con base en ReactJS, diseño HTML y CSS puro,
-               ademas del uso de sus respectivos frameworks. Uso de JS
+          Desarrollo Front-End con base en ReactJS, diseño HTML y CSS puro,
+          ademas del uso de sus respectivos frameworks. Uso de JS
         </p>
       </div>
       <div className="skillsLevel">

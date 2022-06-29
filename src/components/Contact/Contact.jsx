@@ -1,8 +1,19 @@
-import ContactInfo from "../ContactInfo/ContactInfo";
-import Form from "../Form/Form";
+// =========================  STYLES  ========================= //
+
 import "./Contact.scss";
 
+// =========================  CUSTOM IMPORTS  ========================= //
+
+// ----------  COMPONENTS  ---------- //
+
+import ContactInfo from "../ContactInfo/ContactInfo";
+import Form from "../Form/Form";
+
+
 const Contact = () => {
+
+  // ----------  RETURN  ---------- //
+
   return (
     <section className="secContact" id="secContact">
       <div className="contactContainer">

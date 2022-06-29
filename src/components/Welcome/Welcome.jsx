@@ -1,6 +1,17 @@
+// =========================  STYLES  ========================= //
+
 import "./Welcome.scss";
 
+// =========================  CUSTOM IMPORTS  ========================= //
+
+// ----------  COMPONENTS  ---------- //
+
+
 const Welcome = () => {
+
+  
+  // ----------  RETURN  ---------- //
+
   return (
     <section className="secWelcome" id="secWelcome">
       <ul>

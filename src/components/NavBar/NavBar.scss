@@ -1,32 +1,42 @@
-@import "../../styles/base.scss";
+ // ==============================  IMPORT  ============================== //
 
-nav {
-    position: fixed;
-    top: 0;
-    height: 80px;
-    width: 100%;
-    border-bottom: 2px solid $acc;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: $black;
-    padding: 20px;
-    z-index: 10;
-    @include glowPurple;
+ @import "../../styles/base.scss";
 
 
-    .logo {
-        text-decoration: none;
-        color: inherit;
+ // ==============================  NAV CONTENT  ============================== //
 
-        &::hover {
-            color: $white !important;
-        }}
+ nav {
+   position: fixed;
+   top: 0;
+   height: 80px;
+   width: 100%;
+   border-bottom: 2px solid $main;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: $background;
+   padding: 20px;
+   z-index: 10;
+   @include glowPurple;
 
-        .contactLogos {
-            width: min-content;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-    }
+   .logo {
+     text-decoration: none;
+     color: inherit;
+
+     &::hover {
+       color: $font !important;
+     }
+   }
+
+   button {
+     background-color: $background;
+     border: none;
+     color: $font;
+     font-size: bolder;
+     transition: ease all .3s;
+
+     &:hover {
+       color: $main;
+     }
+   }
+ }

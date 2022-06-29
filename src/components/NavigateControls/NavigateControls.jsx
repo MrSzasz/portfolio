@@ -1,26 +1,77 @@
+// =========================  STYLES  ========================= //
+
 import "./NavigateControls.scss";
 
+// =========================  LIBRARIES  ========================= //
+
+import $ from "jquery";
+import { AiOutlineClose } from "react-icons/ai";
+import { FaCode } from "react-icons/fa";
+
+// =========================  CUSTOM IMPORTS  ========================= //
+
+// ----------  COMPONENTS  ---------- //
+
+
 const NavigateControls = () => {
-  function navTo(nav) {
-    document.getElementById(nav).scrollIntoView({ behavior: "smooth" });
+
+
+  // ----------  SHOW NAVBAR  ---------- //
+
+  function navShow() {
+    $("#controlContainer").animate({
+      width: "toggle",
+      padding: "toggle",
+    });
+    $("#linkListContainer").fadeToggle("fast", "linear");
   }
 
+  
+  // ----------  RETURN  ---------- //
+
   return (
-    <div className="controlContainer">
-      <div
-        onClick={() => navTo("secWelcome")}
-        className="controlPosition sec1"
-      >
-        INICIO
-      </div>
-      <div onClick={() => navTo("secAboutMe")} className="controlPosition sec2">SOBRE MI
-      </div>
-      <div onClick={() => navTo("secSkills")} className="controlPosition sec3">SKILLS
-      </div>
-      <div onClick={() => navTo("secWorks")} className="controlPosition sec4">PROYECTOS
-      </div>
-      <div onClick={() => navTo("secContact")} className="controlPosition sec5">CONTACTO
-      </div>
+    <div id="controlContainer" className="controlContainer">
+      <ul id="linkListContainer" className="linkListContainer">
+        <li className="controlPosition">
+          <button onClick={navShow}>
+            <AiOutlineClose size={25} />
+          </button>
+        </li>
+        <li className="controlPosition">
+          <a id="a" onClick={navShow} href="#">
+            INICIO
+          </a>
+        </li>
+        <li className="controlPosition">
+          <a onClick={navShow} href="#secAboutMe">
+            SOBRE MI
+          </a>
+        </li>
+        <li className="controlPosition">
+          <a onClick={navShow} href="#secSkills">
+            SKILLS
+          </a>
+        </li>
+        <li className="controlPosition">
+          <a onClick={navShow} href="#secWorks">
+            PROYECTOS
+          </a>
+        </li>
+        <li className="controlPosition">
+          <a onClick={navShow} href="#secContact">
+            CONTACTO
+          </a>
+        </li>
+        <li className="controlPosition">
+          <a
+            onClick={navShow}
+            href="https://github.com/MrSzasz/portfolio"
+            target="_blank"
+          >
+            <FaCode color="#FFFADE" size="30" />
+          </a>
+        </li>
+      </ul>
     </div>
   );
 };

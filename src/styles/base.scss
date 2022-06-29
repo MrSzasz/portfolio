@@ -1,32 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
-// font-family: 'Monoton', cursive;
-@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
-// font-family: 'Varela Round', sans-serif;
+ // ==============================  FONTS  ============================== //
 
-// $main: #6431AC;
-// $black: #0a0a0a;
-// $white: #FFFADE;
-$main: #5a0de8;
-// $acc: #F21294;
-$acc: #894cda;
-// $pink:#2de2e6;
-$pink:#F21294;
-$blue:#3ECADA;
-$black: #0e0e0e;
-$white: #FFFADE;
-$disabled: #303030;
+ @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+ // font-family: 'Varela Round', sans-serif;
 
-@mixin glowPurple {
-    box-shadow: 0 0 10px $acc;
-}
 
-@mixin glowText($pass) {
-    text-shadow: 0 0 10px $pass;
-}
+ // ==============================  COLORS  ============================== //
 
-@mixin glowPink {
-    box-shadow: 0 0 10px $pink;
-}
-@mixin glowBlue {
-    box-shadow: 0 0 10px $blue;
-}
+ $main: #5a0de8;
+ $background: #0e0e0e;
+ $font: #FFFADE;
+ $disabled: #303030;
+
+
+ // ==============================  MIXINS  ============================== //
+
+ @mixin glowPurple {
+     box-shadow: 0 0 10px $main;
+ }
+
+ @mixin glowText($pass) {
+     text-shadow: 0 0 10px $pass;
+ }

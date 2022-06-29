@@ -1,8 +1,17 @@
+// =========================  STYLES  ========================= //
+
 import "./ContactInfo.scss";
+
+// =========================  CUSTOM IMPORTS  ========================= //
+
 import { FiMail } from "react-icons/fi";
 import { BsWhatsapp, BsLinkedin, BsGithub } from "react-icons/bs";
 
+
 const ContactInfo = () => {
+  
+  // ----------  RETURN  ---------- //
+
   return (
     <div className="infoContactContainer">
       <div className="infoContactLinks">
@@ -30,7 +39,7 @@ const ContactInfo = () => {
           className="contactLinkContainer"
         >
           <div data-contact="&nbsp;LINKEDIN" className="contactLinkLinkedIn">
-            <BsLinkedin size="30" /> 
+            <BsLinkedin size="30" />
           </div>
         </a>
         <a

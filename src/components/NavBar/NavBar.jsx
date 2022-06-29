@@ -1,14 +1,44 @@
+// =========================  STYLES  ========================= //
+
 import "./NavBar.scss";
-import { FaCode } from 'react-icons/fa';
+
+// =========================  LIBRARIES  ========================= //
+
+import $ from "jquery";
+import { AiOutlineMenu } from "react-icons/ai";
+
+// =========================  CUSTOM IMPORTS  ========================= //
+
+// ----------  COMPONENTS  ---------- //
+
 
 const NavBar = () => {
+
+
+  // ----------  SHOW NAVBAR  ---------- //
+
+  function navShow() {
+    $("#controlContainer").animate({
+      width: "toggle",
+      padding: "toggle",
+    });
+    setTimeout(() => {
+      $("#linkListContainer").fadeToggle("fast", "linear");
+    }, 150);
+  }
+
+
+  // ----------  RETURN  ---------- //
+
   return (
     <nav>
-      <a href="#" className="logo">TOMAS LEANDRO LUGO</a>
+      <a href="#" className="logo">
+        TOMAS LEANDRO LUGO
+      </a>
       <div className="contactLogos">
-        <a href="https://github.com/MrSzasz/portfolio" target="_blank">
-        <FaCode color="#FFFADE" size="30"/>
-        </a>
+        <button onClick={navShow}>
+          <AiOutlineMenu size={25} />
+        </button>
       </div>
     </nav>
   );

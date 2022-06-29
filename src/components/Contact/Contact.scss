@@ -1,60 +1,65 @@
-@import "../../styles/base.scss";
+ // ==============================  IMPORT  ============================== //
 
-.secContact {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    grid-column: 1/4;
-    background-image: url(https://i.imgur.com/Yn4uC7L.gif);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 0 10%;
-    // width: 100px !important;
+ @import "../../styles/base.scss";
 
-    .contactContainer {
-        .contactIntro {
-            width: 100%;
-            background-color: $black;
-            box-shadow: 0px 3px 10px #000000;
-            z-index: 4;
-        }
 
-        border: 2px solid $acc;
-        @include glowPurple;
+ // ==============================  CONTACT CONTENT  ============================== //
 
-        h2 {
-            margin: 1rem;
-            width: max-content;
-        }
+ .secContact {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     grid-column: 1/4;
+     background-image: url(https://i.imgur.com/Yn4uC7L.gif);
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+     padding: 0 10%;
 
-        width: min-content;
-        height: min-content;
-        display: flex;
-        background-color: rgba($color: $black, $alpha: .8);
-        flex-direction: column;
+     .contactContainer {
+         width: min-content;
+         height: min-content;
+         display: flex;
+         background-color: rgba($color: $background, $alpha: .8);
+         flex-direction: column;
+         border: 2px solid $main;
+         @include glowPurple;
 
-        .contactInfoContainer {
-            width: min-content;
-            height: min-content;
-            display: flex;
+         .contactIntro {
+             width: 100%;
+             background-color: $background;
+             box-shadow: 0px 3px 10px #000000;
+             z-index: 4;
+         }
 
-        }
-    }
-}
+         h2 {
+             margin: 1rem;
+             width: max-content;
+         }
 
-@media only screen and (max-width: 425px) {
+         .contactInfoContainer {
+             width: min-content;
+             height: min-content;
+             display: flex;
+         }
+     }
+ }
 
-    .secContact {
-        .contactContainer {
-            .contactIntro {
-                display: flex;
-                justify-content: center;
-            }
 
-            .contactInfoContainer {
-                flex-direction: column;
-            }
-        }
-    }
-}
+ // ==============================  MEDIA QUERIES  ============================== //
+
+ @media only screen and (max-width: 425px) {
+
+     .secContact {
+         .contactContainer {
+             .contactIntro {
+                 display: flex;
+                 justify-content: center;
+             }
+
+             .contactInfoContainer {
+                 flex-direction: column;
+             }
+         }
+     }
+ }

@@ -1,72 +1,73 @@
-@import "../../styles/base.scss";
+ // ==============================  IMPORT  ============================== //
 
-.secWelcome {
-    grid-column: 1/4;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    padding: 0 10%;
-    background-image: url(/src/resources/_custom_box_background__aesthetic_is_dead_by_king_lulu_deer_dce61tw.gif);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-top: 80px;
-    width: 100%;
+ @import "../../styles/base.scss";
 
 
+ // ==============================  WELCOME CONTENT  ============================== //
 
-}
+ .secWelcome {
+     grid-column: 1/4;
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     justify-content: center;
+     padding: 0 10%;
+     background-image: url(/src/resources/_custom_box_background__aesthetic_is_dead_by_king_lulu_deer_dce61tw.gif);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     margin-top: 80px;
+     width: 100%;
+ }
 
-ul {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    padding-left: 10%;
+ ul {
+     position: relative;
+     display: flex;
+     flex-direction: column;
+     gap: 30px;
+     padding-left: 10%;
 
-    li {
-        position: relative;
-        list-style: none;
+     li {
+         position: relative;
+         list-style: none;
 
-        h3 {
-            width: min-content;
-            border-bottom: none !important;
-            cursor: default;
-            position: relative;
-            font-size: 3.5em;
-            text-decoration: none;
-            line-height: 1em;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            color: transparent;
-            -webkit-text-stroke: 1px rgba($color: $white, $alpha: .5);
-            overflow: hidden;
-            text-shadow: 2px 2px 9px $black;
-            background-color: rgba($color: $black, $alpha: .8);
-            box-shadow: 0px 3px 10px #000000;
+         h3 {
+             width: min-content;
+             border-bottom: none !important;
+             cursor: default;
+             position: relative;
+             font-size: 3.5em;
+             text-decoration: none;
+             line-height: 1em;
+             letter-spacing: 2px;
+             text-transform: uppercase;
+             color: transparent;
+             -webkit-text-stroke: 1px rgba($color: $font, $alpha: .5);
+             overflow: hidden;
+             text-shadow: 2px 2px 9px $background;
+             background-color: rgba($color: $background, $alpha: .8);
+             box-shadow: 0px 3px 10px #000000;
 
-            &::before {
-                content: attr(data-text);
-                position: absolute;
-                color: $acc;
-                top: 50%;
-                left: 0;
-                transform: translateY(-50%);
-                width: 0;
-                overflow: hidden;
-                transition: 1s;
-                border-right: 8px solid $acc;
-                -webkit-text-stroke: 1px $acc;
-            }
+             &::before {
+                 content: attr(data-text);
+                 position: absolute;
+                 color: $main;
+                 top: 50%;
+                 left: 0;
+                 transform: translateY(-50%);
+                 width: 0;
+                 overflow: hidden;
+                 transition: 1s;
+                 border-right: 8px solid $main;
+                 -webkit-text-stroke: 1px $main;
+             }
 
-            &:hover {
-
-                &::before {
-                    width: 100%;
-                    @include glowText($acc);
-                }
-            }
-        }
-    }
-}
+             &:hover {
+                 &::before {
+                     width: 100%;
+                     @include glowText($main);
+                 }
+             }
+         }
+     }
+ }

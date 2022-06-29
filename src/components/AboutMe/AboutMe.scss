@@ -1,146 +1,152 @@
-@import "../../styles/base.scss";
+ // ==============================  IMPORT  ============================== //
 
-.secAboutMe {
-    display: flex;
-    align-items: center;
-    gap: 5rem;
-    grid-column: 2/3;
+ @import "../../styles/base.scss";
 
 
-    .imgAboutMe {
-        width: 50%;
+ // ==============================  CONTENT ABOUT ME  ============================== //
 
-        img {
-            width: 100%;
-        }
-    }
+ .secAboutMe {
+     display: flex;
+     align-items: center;
+     gap: 5rem;
+     grid-column: 2/3;
 
-    .infoAboutMe {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 1rem;
 
-        .textInfoAboutMe {
+     .imgAboutMe {
+         width: 50%;
 
-            max-height: 80% !important;
-            width: 100%;
+         img {
+             width: 100%;
+         }
+     }
 
-            h2 {
-                width: 50%;
-            }
+     .infoAboutMe {
+         width: 100%;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         gap: 1rem;
 
-            p {
-                height: 100%;
-                width: 100%;
-            }
-        }
+         .textInfoAboutMe {
+             max-height: 80% !important;
+             width: 100%;
 
-        /* From uiverse.io by @mrhyddenn */
-        a {
-            text-align: center;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            padding: 10px 30px;
-            transition: 0.5s;
-            position: relative;
-            font-size: 17px;
-            background-color: #333;
-            border: none;
-            color: $white;
-            text-decoration: none;
-            box-shadow: 0px 3px 10px #000000;
+             h2 {
+                 width: 50%;
+             }
 
-        }
+             p {
+                 height: 100%;
+                 width: 100%;
+             }
+         }
 
-        a:hover {
-            letter-spacing: 0.25em;
-            background: $acc;
-            color: $acc;
-            box-shadow: 0 0 25px $acc;
-        }
+         /* From uiverse.io by @mrhyddenn */
+         a {
+             text-align: center;
+             text-transform: uppercase;
+             letter-spacing: 0.1em;
+             padding: 10px 30px;
+             transition: 0.5s;
+             position: relative;
+             font-size: 17px;
+             background-color: #333;
+             border: none;
+             color: $font;
+             text-decoration: none;
+             box-shadow: 0px 3px 10px #000000;
 
-        a::before {
-            content: '';
-            position: absolute;
-            inset: 2px;
-            background: $black;
-        }
+         }
 
-        a span {
-            position: relative;
-            z-index: 1;
-        }
+         a:hover {
+             letter-spacing: 0.25em;
+             background: $main;
+             color: $main;
+             box-shadow: 0 0 25px $main;
+         }
 
-        a i {
-            position: absolute;
-            inset: 0;
-            display: block;
-        }
+         a::before {
+             content: '';
+             position: absolute;
+             inset: 2px;
+             background: $background;
+         }
 
-        a i::before {
-            content: '';
-            position: absolute;
-            border: 2px solid $acc;
-            width: 7px;
-            height: 4px;
-            top: -3.5px;
-            left: 80%;
-            background: $black;
-            transform: translateX(-50%);
-            transition: 0.5s;
-        }
+         a span {
+             position: relative;
+             z-index: 1;
+         }
 
-        a:hover i::before {
-            width: 20px;
-            left: 20%;
-        }
+         a i {
+             position: absolute;
+             inset: 0;
+             display: block;
+         }
 
-        a i::after {
-            content: '';
-            position: absolute;
-            border: 2px solid $acc;
-            width: 7px;
-            height: 4px;
-            bottom: -3.5px;
-            left: 20%;
-            background: $black;
-            transform: translateX(-50%);
-            transition: 0.5s;
-        }
+         a i::before {
+             content: '';
+             position: absolute;
+             border: 2px solid $main;
+             width: 7px;
+             height: 4px;
+             top: -3.5px;
+             left: 80%;
+             background: $background;
+             transform: translateX(-50%);
+             transition: 0.5s;
+         }
 
-        a:hover i::after {
-            width: 20px;
-            left: 80%;
-        }
-    }
-}
+         a:hover i::before {
+             width: 20px;
+             left: 20%;
+         }
 
-@media only screen and (max-width: 769px) {
-    .secAboutMe {
-        flex-direction: column;
-        height: min-content !important;
-    }
-}
+         a i::after {
+             content: '';
+             position: absolute;
+             border: 2px solid $main;
+             width: 7px;
+             height: 4px;
+             bottom: -3.5px;
+             left: 20%;
+             background: $background;
+             transform: translateX(-50%);
+             transition: 0.5s;
+         }
 
-@media only screen and (max-width: 426px) {
-    .secAboutMe {
-        .imgAboutMe {
-            width: 100%;
-        }
+         a:hover i::after {
+             width: 20px;
+             left: 80%;
+         }
+     }
+ }
 
-        .infoAboutMe {
-            .textInfoAboutMe {
-                h2 {
-                    width: 100%;
-                }
 
-                p {
-                    text-align: justify;
-                }
-            }
+ // ==============================  MEDIA QUERIES  ============================== //
 
-        }
-    }
-}
+ @media only screen and (max-width: 769px) {
+     .secAboutMe {
+         flex-direction: column;
+         height: min-content !important;
+     }
+ }
+
+ @media only screen and (max-width: 426px) {
+     .secAboutMe {
+         .imgAboutMe {
+             width: 100%;
+         }
+
+         .infoAboutMe {
+             .textInfoAboutMe {
+                 h2 {
+                     width: 100%;
+                 }
+
+                 p {
+                     text-align: justify;
+                 }
+             }
+         }
+     }
+ }

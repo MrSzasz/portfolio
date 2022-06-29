@@ -1,9 +1,19 @@
-import { useEffect } from "react";
+// =========================  STYLES  ========================= //
+
 import "./Form.scss";
 
+// =========================  LIBRARIES  ========================= //
+
+import { useEffect } from "react";
 import toast, { Toaster } from "react-hot-toast";
 
+// =========================  CUSTOM IMPORTS  ========================= //
+
+
 const Form = () => {
+
+  // ----------  TOAST  ---------- //
+
   const successToast = () =>
     toast.success("¡Enviado correctamente!", {
       className: "toastStyle toastStyleSuccess",
@@ -12,6 +22,9 @@ const Form = () => {
     toast.error("Error, intente nuevamente", {
       className: "toastStyle toastStyleError",
     });
+
+
+  // ----------  EMAILJS  ---------- //
 
   useEffect(() => {
     const btn = document.getElementById("button");
@@ -41,6 +54,9 @@ const Form = () => {
   }, []);
 
   return (
+
+    // ----------  RETURN  ---------- //
+    
     <div className="formContainer">
       <form id="form">
         <input

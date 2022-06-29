@@ -1,24 +1,39 @@
+// =========================  STYLES  ========================= //
 
-// =========================  STYLES  =========================
+
+
+// =========================  LIBRARIES  ========================= //
+
+
+
+// =========================  CUSTOM IMPORTS  ========================= //
+
+// ----------  COMPONENTS  ---------- //
+
+
+  // ----------  RETURN  ---------- //
+
+
+// =========================  STYLES  ========================= //
 
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./App.scss"
+import "./App.scss";
 
-// =========================  LIBRARIES  =========================
+// =========================  LIBRARIES  ========================= //
 
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
-// =========================  CUSTOM IMPORTS  =========================
-// import CartContextProvider from "./context/CartContext/CartContext";
+// =========================  CUSTOM IMPORTS  ========================= //
 
-// ----------  COMPONENTS  ---------- 
+// ----------  COMPONENTS  ---------- //
 
-import NavBar from "./components/NavBar/NavBar"
-import Home from "./components/Home/Home"
-
-
+import NavBar from "./components/NavBar/NavBar";
+import Home from "./components/Home/Home";
 
 function App() {
+
+  // ----------  RETURN  ---------- //
+  
   return (
     <BrowserRouter>
       <NavBar />
@@ -27,7 +42,7 @@ function App() {
         <Route path="/*" element={<Navigate to="/" replace />} />
       </Routes>
     </BrowserRouter>
-  )
+  );
 }
 
-export default App
+export default App;

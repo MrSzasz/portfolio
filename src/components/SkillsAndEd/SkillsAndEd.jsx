@@ -25,7 +25,7 @@ const SkillsAndEd = () => {
         </h2>
         <p>
           Desarrollo Front-End con base en ReactJS, diseño HTML y CSS puro,
-          ademas del uso de sus respectivos frameworks. Uso de JS
+          ademas del uso de sus respectivos frameworks. Base de datos gracias al uso de Firebase.
         </p>
       </div>
       <div className="skillsLevel">

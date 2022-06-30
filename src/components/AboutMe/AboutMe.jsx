@@ -28,7 +28,7 @@ const AboutMe = () => {
         <a 
           href="https://drive.google.com/uc?export=download&id=16Pd7cVbDkraEFBgQS2fvKxw9TDM2bnQP"
           rel="noopener noreferrer"
-          target="_self"
+          target="_blank"
         >
           <span>Descargar CV</span>
           <i></i>

@@ -25,8 +25,8 @@ const AboutMe = () => {
             pudiendo así completar objetivos empresariales y personales.
           </p>
         </div>
-        <a
-          href="./CV-LugoTomas.pdf"
+        <a 
+          href="./dist/assets/CV-LugoTomas.pdf"
           download
           rel="noopener noreferrer"
           target="_blank"

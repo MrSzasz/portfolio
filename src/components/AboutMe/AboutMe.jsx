@@ -26,7 +26,7 @@ const AboutMe = () => {
           </p>
         </div>
         <a
-          href="./assets/CV-LugoTomas.pdf"
+          href="./CV-LugoTomas.pdf"
           download
           rel="noopener noreferrer"
           target="_blank"

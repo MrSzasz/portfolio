@@ -26,10 +26,9 @@ const AboutMe = () => {
           </p>
         </div>
         <a 
-          href="./dist/assets/CV-LugoTomas.pdf"
-          download
+          href="https://drive.google.com/uc?export=download&id=16Pd7cVbDkraEFBgQS2fvKxw9TDM2bnQP"
           rel="noopener noreferrer"
-          target="_blank"
+          target="_self"
         >
           <span>Descargar CV</span>
           <i></i>

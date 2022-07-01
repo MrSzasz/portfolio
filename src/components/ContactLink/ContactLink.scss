@@ -23,11 +23,9 @@
          color: inherit !important;
      }
 
-     .contactLinkMail,
-     .contactLinkWhatsApp,
-     .contactLinkLinkedIn,
-     .contactLinkGitHub {
+     .contactLinkAfter {
          position: relative;
+         transition: ease all .3s;
 
          &::after {
              content: attr(data-contact);
@@ -40,24 +38,20 @@
      &:hover {
          transform: scale(1.1);
 
-         .contactLinkMail {
+         .linkMAIL {
              @include glowText(#DE4032);
-             transition: ease all .3s;
          }
 
-         .contactLinkWhatsApp {
+         .linkWSP {
              @include glowText(#47C155);
-             transition: ease all .3s;
          }
 
-         .contactLinkLinkedIn {
+         .linkLND {
              @include glowText(#0071AE);
-             transition: ease all .3s;
          }
 
-         .contactLinkGitHub {
+         .linkGH {
              @include glowText(#F2F2F2);
-             transition: ease all .3s;
          }
      }
  }

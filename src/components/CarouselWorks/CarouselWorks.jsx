@@ -55,7 +55,7 @@ const CarouselWorks = () => {
           >
             <button className="cssbuttons-io-button">
               Visitar
-              <div className="icon">
+              <a href="https://mmrecruiter.netlify.app/" className="icon">
                 <svg
                   height="24"
                   width="24"
@@ -68,16 +68,16 @@ const CarouselWorks = () => {
                     fill="currentColor"
                   ></path>
                 </svg>
-              </div>
+              </a>
             </button>
             <button className="cssbuttons-io-button">
               Ver código
-              <div className="icon">
+              <a href="https://github.com/MrSzasz/MMRecruiter" className="icon">
                 <svg
                   height="24"
                   width="24"
                   viewBox="0 0 24 24"
-                  xmlns="https://github.com/MrSzasz/MMRecruiter"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
                   <path d="M0 0h24v24H0z" fill="none"></path>
                   <path
@@ -85,7 +85,7 @@ const CarouselWorks = () => {
                     fill="currentColor"
                   ></path>
                 </svg>
-              </div>
+              </a>
             </button>
           </CarouselWorksItem>
         </Carousel.Item>

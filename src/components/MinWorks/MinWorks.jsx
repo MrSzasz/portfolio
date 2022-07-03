@@ -46,7 +46,7 @@ const MinWorks = () => {
       >
         <button className="cssbuttons-io-button">
           Visitar
-          <div className="icon">
+          <a href="https://mmrecruiter.netlify.app/" className="icon">
             <svg
               height="24"
               width="24"
@@ -59,11 +59,11 @@ const MinWorks = () => {
                 fill="currentColor"
               ></path>
             </svg>
-          </div>
+          </a>
         </button>
         <button className="cssbuttons-io-button">
           Ver código
-          <div className="icon">
+          <a href="https://github.com/MrSzasz/MMRecruiter" className="icon">
             <svg
               height="24"
               width="24"
@@ -76,7 +76,7 @@ const MinWorks = () => {
                 fill="currentColor"
               ></path>
             </svg>
-          </div>
+          </a>
         </button>
       </MinWorkCard>
       <MinWorkCard

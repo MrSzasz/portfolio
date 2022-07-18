@@ -138,6 +138,21 @@ const CarouselWorks = () => {
             </a>
           </CarouselWorksItem>
         </Carousel.Item>
+        <Carousel.Item>
+          <CarouselWorksItem
+            src="https://i.imgur.com/tKZhhgL.png"
+            name="Notas Full-Stack"
+            text="Estas son las notas que voy tomando en mi camino hacia ser Full-Stack Developer, las mismas se actualizan a medida que aprendo algo nuevo"
+          >
+            <a className="btn-notes" 
+          href="https://github.com/MrSzasz/Notes"
+          target="_blank"
+        >
+          <span>Visitar</span>
+          <i></i>
+        </a>
+          </CarouselWorksItem>
+        </Carousel.Item>
       </Carousel>
     </div>
   );

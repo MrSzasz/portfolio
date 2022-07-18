@@ -41,6 +41,7 @@ const SkillsAndEd = () => {
         <SkillsBlock>
           <SkillBar name="GIT" value="70" />
           <SkillBar name="JQUERY" value="60" />
+          <SkillBar name="TYPESCRIPT" value="45" />
         </SkillsBlock>
       </div>
 

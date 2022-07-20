@@ -20,11 +20,12 @@ const SkillsAndEd = () => {
     <section className="secSkills" id="secSkills">
       <div className="infoSkills">
         <h2>
-          <BsCode /> Front-End
+          <BsCode /> Desarrollador Front-End 
         </h2>
         <p>
           Desarrollo Front-End con base en ReactJS, diseño HTML y CSS puro,
-          ademas del uso de sus respectivos frameworks.
+          ademas del uso de sus respectivos frameworks.<br />
+          Manejo de base de datos con Firebase.
         </p>
       </div>
       <div className="skillsLevel">
@@ -41,25 +42,12 @@ const SkillsAndEd = () => {
         <SkillsBlock>
           <SkillBar name="GIT" value="70" />
           <SkillBar name="JQUERY" value="60" />
-          <SkillBar name="TYPESCRIPT" value="45" />
+          <SkillBar name="TYPESCRIPT" value="55" />
         </SkillsBlock>
-      </div>
-
-      <div className="infoSkills">
-        <h2>
-          <CgDatabase /> Back-End
-        </h2>
-        <p>
-          Desarrollo Back-End con NodeJS para la utilización de JavaScript del lado del servidor. Manipulación de base de datos con FireBase.
-        </p>
-      </div>
-      <div className="skillsLevel">
         <SkillsBlock>
           <SkillBar name="FIREBASE" value="50" />
           <SkillBar name="NODEJS" value="10" />
         </SkillsBlock>
-        <SkillsBlock></SkillsBlock>
-        <SkillsBlock></SkillsBlock>
       </div>
     </section>
   );

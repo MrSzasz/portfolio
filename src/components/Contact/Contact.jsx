@@ -18,7 +18,7 @@ const Contact = () => {
     <section className="secContact" id="secContact">
       <div className="contactContainer">
         <div className="contactIntro">
-          <h2>CONTACTAME</h2>
+          <h2>CONTACT ME</h2>
         </div>
         <div className="contactInfoContainer">
           <Form />

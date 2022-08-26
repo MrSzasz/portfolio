@@ -14,11 +14,11 @@ const Form = () => {
   // ----------  TOAST  ---------- //
 
   const successToast = () =>
-    toast.success("¡Enviado correctamente!", {
+    toast.success("Well done!", {
       className: "toastStyle toastStyleSuccess",
     });
   const errorToast = () =>
-    toast.error("Error, intente nuevamente", {
+    toast.error("Error, please try again!", {
       className: "toastStyle toastStyleError",
     });
 
@@ -32,18 +32,18 @@ const Form = () => {
       .addEventListener("submit", function (event) {
         event.preventDefault();
 
-        btn.value = "Enviando...";
+        btn.value = "Sending...";
 
         const serviceID = "default_service";
         const templateID = "template_u5ue2hf";
 
         emailjs.sendForm(serviceID, templateID, this).then(
           () => {
-            btn.value = "Enviar";
+            btn.value = "Send";
             successToast();
           },
           (err) => {
-            btn.value = "Enviar";
+            btn.value = "Send";
             alert(JSON.stringify(err));
             errorToast();
           }
@@ -59,23 +59,23 @@ const Form = () => {
         <FormInput
           type="text"
           inputName="to_name"
-          placeholder="Inserte su nombre"
+          placeholder="Name"
         />
         <FormInput
           type="email"
           inputName="to_email"
-          placeholder="Inserte su email"
+          placeholder="mail@example.com"
         />
         <FormInput
           type="text"
           inputName="to_message"
-          placeholder="¡Hola! Me comunicaba para..."
+          placeholder="Hi! Write something"
         />
         <button>
           <input
             type="submit"
             id="button"
-            value="Enviar"
+            value="Send"
             className="sendButton"
           ></input>
           <i></i>

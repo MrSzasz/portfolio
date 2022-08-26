@@ -12,36 +12,47 @@ import { Carousel } from "react-bootstrap";
 
 import CarouselWorksItem from "../CarouselWorksItem/CarouselWorksItem";
 
-
 const CarouselWorks = () => {
+  // ----------  RETURN  ---------- //
 
-
-    // ----------  RETURN  ---------- //
-
-    return (
+  return (
     <div className="carouselContainer">
       <Carousel>
         <Carousel.Item>
           <CarouselWorksItem
+            src="https://i.imgur.com/tKZhhgL.png"
+            name="Full-Stack Roadmap"
+            text="This is my repository where I take the notes for my Full-stack roadmap almost every day. (Spanish)"
+          >
+            <a
+              className="btn-notes"
+              href="https://github.com/MrSzasz/Notes"
+              target="_blank"
+            >
+              <span>Visit</span>
+              <i></i>
+            </a>
+          </CarouselWorksItem>
+        </Carousel.Item>
+        <Carousel.Item>
+          <CarouselWorksItem
             src="https://i.imgur.com/Cyyp2cZ.png"
             name="IDKHOW Band"
-            text="En esta página encontraras toda la información relacionada
-            con la banda IDKHOW, desde su historia, noticias, su
-            discografía completa y el tour actualizado."
+            text="On this page, you'll find all the information related to IDKHOW like their history, news, discography, and tour dates. (Spanish)"
           >
             <a
               className="btn btn-idkhow"
               href="https://mrszasz.github.io/IDKHOWBandLugo/index.html"
               target="_blank"
             >
-              Visitar
+              Visit
             </a>
             <a
               className="btn btn-idkhow"
               href="https://github.com/MrSzasz/IDKHOWBandLugo"
               target="_blank"
             >
-              Ver código
+              Code
             </a>
           </CarouselWorksItem>
         </Carousel.Item>
@@ -51,10 +62,10 @@ const CarouselWorks = () => {
             name="MMRecruiter"
             text="MM Talent Search People es una consultora internacional de
           selección de personal y recursos humanos nacida en 2021 con el
-          objetivo de encontrar talento y convertirlo en oportunidad..."
+          objetivo de encontrar talento y convertirlo en oportunidad... (Spanish)"
           >
             <button className="cssbuttons-io-button">
-              Visitar
+              Visit
               <a href="https://mmrecruiter.netlify.app/" className="icon">
                 <svg
                   height="24"
@@ -71,7 +82,7 @@ const CarouselWorks = () => {
               </a>
             </button>
             <button className="cssbuttons-io-button">
-              Ver código
+              Code
               <a href="https://github.com/MrSzasz/MMRecruiter" className="icon">
                 <svg
                   height="24"
@@ -93,24 +104,21 @@ const CarouselWorks = () => {
           <CarouselWorksItem
             src="https://i.imgur.com/WsR7LtZ.png"
             name="Shax's Pouch"
-            text="En Shax's Pouch nos encargamos de crear, recolectar y vender
-            diferentes artículos místicos, los cuales tienen una carga
-            energética particular, depende de ti elegir si seras el que la
-            reciba o si quieres entregársela a alguien mas..."
+            text="Shax's Pouch is a fake E-commerce with a dark and ominous tone, developed with JavaScript and their libraries. (Spanish)"
           >
             <a
               className="btn-nm"
               href="https://mrszasz.github.io/Night-Market/index.html"
               target="_blank"
             >
-              Visitar
+              Visit
             </a>
             <a
               className="btn-nm"
               href="https://github.com/MrSzasz/Night-Market"
               target="_blank"
             >
-              Ver codigo
+              Code
             </a>
           </CarouselWorksItem>
         </Carousel.Item>
@@ -118,39 +126,22 @@ const CarouselWorks = () => {
           <CarouselWorksItem
             src="https://i.imgur.com/jh6AVOy.png"
             name="Moon Farm"
-            text="Moon Farm es una tienda con productos caseros frescos, cultivados
-            a mano, con pasión y dedicación unica, proveniente del corazón del
-            Pueblo Pelícano. ¿Que esperas para darle un vistazo?"
+            text="Moon Farm is a fake e-commerce based on the video game called Stardew Valley, developed with ReactJS and Firebase. (Spanish)"
           >
             <a
               className="btn-mf"
               href="https://moon-farm-coder.netlify.app/"
               target="_blank"
             >
-              Visitar
+              Visit
             </a>
             <a
               className="btn-mf"
               href="https://github.com/MrSzasz/Moon-Farm"
               target="_blank"
             >
-              Ver código
+              Code
             </a>
-          </CarouselWorksItem>
-        </Carousel.Item>
-        <Carousel.Item>
-          <CarouselWorksItem
-            src="https://i.imgur.com/tKZhhgL.png"
-            name="Notas Full-Stack"
-            text="Estas son las notas que voy tomando en mi camino hacia ser Full-Stack Developer, las mismas se actualizan a medida que aprendo algo nuevo"
-          >
-            <a className="btn-notes" 
-          href="https://github.com/MrSzasz/Notes"
-          target="_blank"
-        >
-          <span>Visitar</span>
-          <i></i>
-        </a>
           </CarouselWorksItem>
         </Carousel.Item>
       </Carousel>

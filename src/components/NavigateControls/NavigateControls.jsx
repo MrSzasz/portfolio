@@ -38,11 +38,11 @@ const NavigateControls = () => {
             <AiOutlineClose size={25} />
           </button>
         </li>
-        <LinkItem fonClick={navShow} href="#" content="INICIO" />
-        <LinkItem fonClick={navShow} href="#secAboutMe" content="SOBRE MI" />
+        <LinkItem fonClick={navShow} href="#" content="HOME" />
+        <LinkItem fonClick={navShow} href="#secAboutMe" content="ABOUT ME" />
         <LinkItem fonClick={navShow} href="#secSkills" content="SKILLS" />
-        <LinkItem fonClick={navShow} href="#secWorks" content="PROYECTOS" />
-        <LinkItem fonClick={navShow} href="#secContact" content="CONTACTO" />
+        <LinkItem fonClick={navShow} href="#secWorks" content="WORKS" />
+        <LinkItem fonClick={navShow} href="#secContact" content="CONTACT ME" />
         <li className="controlPosition">
           <a
             onClick={navShow}

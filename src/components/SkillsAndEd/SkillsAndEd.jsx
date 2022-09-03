@@ -34,15 +34,16 @@ const SkillsAndEd = () => {
         </SkillsBlock>
         <SkillsBlock>
           <SkillBar name="BOOTSTRAP" value="80" />
+          <SkillBar name="TAILWIND" value="75" />
           <SkillBar name="JAVASCRIPT" value="75" />
-          <SkillBar name="REACTJS" value="75" />
         </SkillsBlock>
         <SkillsBlock>
+          <SkillBar name="REACTJS" value="75" />
           <SkillBar name="GIT" value="70" />
           <SkillBar name="JQUERY" value="75" />
-          <SkillBar name="TYPESCRIPT" value="55" />
         </SkillsBlock>
         <SkillsBlock>
+          <SkillBar name="TYPESCRIPT" value="55" />
           <SkillBar name="FIREBASE" value="55" />
           <SkillBar name="NODEJS" value="10" />
         </SkillsBlock>

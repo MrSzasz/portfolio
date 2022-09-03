@@ -18,6 +18,28 @@ const CarouselWorks = () => {
   return (
     <div className="carouselContainer">
       <Carousel>
+      <Carousel.Item>
+          <CarouselWorksItem
+            src="https://i.imgur.com/NTvM8L6.png"
+            name="Tend Bond - Freelance (on development)"
+            text="E-Commerce developed with ReactJS and Firebase (Spanish)"
+          >
+            <a
+              className="btn-tb"
+              href="https://trend-bond-react.netlify.app/"
+              target="_blank"
+            >
+              Visit
+            </a>
+            <a
+              className="btn-tb"
+              href="https://github.com/MrSzasz/Trend-Bond-React"
+              target="_blank"
+            >
+              Code
+            </a>
+          </CarouselWorksItem>
+        </Carousel.Item>
         <Carousel.Item>
           <CarouselWorksItem
             src="https://i.imgur.com/tKZhhgL.png"
@@ -59,7 +81,7 @@ const CarouselWorks = () => {
         <Carousel.Item>
           <CarouselWorksItem
             src="https://i.imgur.com/9iBKq9h.png"
-            name="MMRecruiter"
+            name="MMRecruiter - Freelance"
             text="MM Talent Search People es una consultora internacional de
           selección de personal y recursos humanos nacida en 2021 con el
           objetivo de encontrar talento y convertirlo en oportunidad... (Spanish)"

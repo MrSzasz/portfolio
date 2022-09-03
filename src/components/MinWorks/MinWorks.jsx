@@ -28,6 +28,26 @@ const MinWorks = () => {
         </a>
       </MinWorkCard>
       <MinWorkCard
+        classCard="workCardTB"
+        name="Tend Bond - Freelance (on development)"
+            text="E-Commerce developed with ReactJS and Firebase (Spanish)"
+      >
+        <a
+              className="btn-tb"
+              href="https://trend-bond-react.netlify.app/"
+              target="_blank"
+            >
+              Visit
+            </a>
+            <a
+              className="btn-tb"
+              href="https://github.com/MrSzasz/Trend-Bond-React"
+              target="_blank"
+            >
+              Code
+            </a>
+      </MinWorkCard>
+      <MinWorkCard
         classCard="workCardIDKHOW"
         name="IDKHOW Band"
         text="On this page, you'll find all the information related to IDKHOW like their history, news, discography, and tour dates. (Spanish)"

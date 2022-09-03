@@ -270,3 +270,22 @@
          color: white;
      }
  }
+ // ================================================================= //
+
+ .btn-ik {
+    width: max-content;
+    height: min-content;
+    text-align: center;
+    padding: 10px 30px;
+    transition: ease all .25s;
+    border-radius: 50px;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+
+    &:hover {
+        color: white !important;
+        background-color: #034C8C;
+    }
+}

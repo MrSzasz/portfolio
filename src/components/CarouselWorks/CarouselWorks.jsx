@@ -146,6 +146,28 @@ const CarouselWorks = () => {
         </Carousel.Item>
         <Carousel.Item>
           <CarouselWorksItem
+            src="https://i.imgur.com/FZ0FA7v.png"
+            name="InkuA - Freelance"
+            text="Inkua is a non-profit organization that creates learning and innovation opportunities to develop skills. (Spanish)"
+          >
+            <a
+              className="btn-ik"
+              href="https://mrszasz.github.io/inkua/"
+              target="_blank"
+            >
+              Visit
+            </a>
+            <a
+              className="btn-ik"
+              href="https://github.com/MrSzasz/inkua"
+              target="_blank"
+            >
+              Code
+            </a>
+          </CarouselWorksItem>
+        </Carousel.Item>
+        <Carousel.Item>
+          <CarouselWorksItem
             src="https://i.imgur.com/jh6AVOy.png"
             name="Moon Farm"
             text="Moon Farm is a fake e-commerce based on the video game called Stardew Valley, developed with ReactJS and Firebase. (Spanish)"

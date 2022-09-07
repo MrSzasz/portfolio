@@ -13,10 +13,10 @@ import { useEffect, useState } from "react";
 import CarouselWorks from "../CarouselWorks/CarouselWorks";
 import MinWorks from "../MinWorks/MinWorks";
 
-
 const Works = () => {
+  const [loading, setLoading] = useState(true);
   const [sWidth, setSWidth] = useState();
-
+  const [workArray, setWorkArray] = useState([]);
 
   // ----------  GET WIDTH  ---------- //
 
@@ -25,12 +25,33 @@ const Works = () => {
     setSWidth(width);
   });
 
-  return (
+  const fetchData = async () => {
+    try {
+      let data = await fetch("src/data/work.js");
+      let parsedData = await data.json();
+      setWorkArray(parsedData);
+      setLoading(false);
+    } catch (err) {
+      console.error(err);
+    }
+  };
+  
+  useEffect(() => {
+    fetchData();
+  }, []);
 
+  return (
     // ----------  RETURN  ---------- //
 
     <section className="secWorks" id="secWorks">
-      {sWidth >= 425 ? <CarouselWorks /> : <MinWorks />}
+      <h2>Works</h2>
+      {loading ? (
+        <h1>Loading</h1>
+      ) : sWidth >= 425 ? (
+        <CarouselWorks works={workArray} />
+      ) : (
+        <MinWorks works={workArray} />
+      )}
     </section>
   );
 };

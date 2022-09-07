@@ -1,11 +1,9 @@
 // =========================  STYLES  ========================= //
 
+import MainButton from "../MainButton/MainButton";
 import "./MinWorkCard.scss";
 
-
-const MinWorkCard = ({ classCard, name, text, children }) => {
-
-
+const MinWorkCard = ({ classCard, name, text, linkDeploy, linkRepo }) => {
   // ----------  RETURN  ---------- //
 
   return (
@@ -14,7 +12,12 @@ const MinWorkCard = ({ classCard, name, text, children }) => {
         <div className="workCardContent">
           <h3>= {name} =</h3>
           <p>"{text}"</p>
-          <div className="buttonWorksContainer">{children}</div>
+          <div className="buttonWorksContainer">
+            {name !== "Full-Stack Roadmap" && (
+              <MainButton link={linkDeploy} text="Visit" />
+            )}
+            <MainButton link={linkRepo} text="Code" />
+          </div>
         </div>
       </div>
     </div>

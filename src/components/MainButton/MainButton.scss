@@ -1,0 +1,87 @@
+ // ==============================  IMPORT  ============================== //
+
+ @import "../../styles/base.scss";
+
+
+ // ==============================  BUTTON CONTENT  ============================== //
+
+ .btn-main {
+     text-align: center;
+     text-transform: uppercase;
+     letter-spacing: 0.1em;
+     padding: 10px 30px;
+     transition: 0.5s;
+     position: relative;
+     font-size: 17px;
+     background-color: #333;
+     border: none;
+     color: $font;
+     text-decoration: none;
+     box-shadow: 0px 3px 10px #000000;
+
+ }
+
+ .btn-main:hover {
+     letter-spacing: 0.25em;
+     background: $main;
+     color: $main;
+     box-shadow: 0 0 25px $main;
+ }
+
+ .btn-main::before {
+     content: '';
+     position: absolute;
+     inset: 2px;
+     background: $background;
+ }
+
+ .btn-main span {
+     position: relative;
+     z-index: 1;
+ }
+
+ .btn-main i {
+     position: absolute;
+     inset: 0;
+     display: block;
+ }
+
+ .btn-main i::before {
+     content: '';
+     position: absolute;
+     border: 2px solid $main;
+     width: 7px;
+     height: 4px;
+     top: -3.5px;
+     left: 80%;
+     background: $background;
+     transform: translateX(-50%);
+     transition: 0.5s;
+ }
+
+ .btn-main:hover i::before {
+     width: 20px;
+     left: 20%;
+ }
+
+ .btn-main i::after {
+     content: '';
+     position: absolute;
+     border: 2px solid $main;
+     width: 7px;
+     height: 4px;
+     bottom: -3.5px;
+     left: 20%;
+     background: $background;
+     transform: translateX(-50%);
+     transition: 0.5s;
+ }
+
+ .btn-main:hover i::after {
+     width: 20px;
+     left: 80%;
+ }
+
+ .hidden {
+     display: none;
+ }

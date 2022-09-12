@@ -12,6 +12,7 @@ import { useEffect, useState } from "react";
 
 import CarouselWorks from "../CarouselWorks/CarouselWorks";
 import MinWorks from "../MinWorks/MinWorks";
+import ChoiceRadio from "../ChoiceRadio/ChoiceRadio";
 
 const Works = () => {
   const [loading, setLoading] = useState(true);
@@ -45,6 +46,7 @@ const Works = () => {
 
     <section className="secWorks" id="secWorks">
       <h2>Works</h2>
+      <ChoiceRadio/>
       {loading ? (
         <h1>Loading</h1>
       ) : sWidth >= 425 ? (

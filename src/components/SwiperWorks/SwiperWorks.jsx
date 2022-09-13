@@ -33,7 +33,7 @@ const SwiperWorks = ({ arrayFromMain }) => {
         pagination={{ clickable: true }}
       >
         {arrayFromMain.map((work) => (
-          <SwiperSlide>
+          <SwiperSlide key={work.id}>
             <WorkCardSlider
               name={work.name}
               text={work.text}

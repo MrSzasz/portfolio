@@ -22,7 +22,7 @@ const SwiperWorks = ({ arrayFromMain }) => {
   return (
     // ----------  RETURN  ---------- //
 
-    <div className="contenedorSwiper">
+    <div className="swiperContainer">
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
         autoplay={{

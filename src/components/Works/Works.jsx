@@ -40,7 +40,7 @@ const Works = () => {
       ? (filteredArray = workArray.filter((work) => work.label === arrayFilter))
       : (filteredArray = workArray);
     setArrayWithFilter(filteredArray);
-    $(".contenedorSwiper").fadeIn();
+    $(".swiperContainer").fadeIn();
   };
 
   // ==========  GET DATA FOR FILTER  ========== //
@@ -49,7 +49,7 @@ const Works = () => {
     $("input[type=radio][name=worksRadio]").on("change", () => {
       setArrayFilter($("input[type=radio][name=worksRadio]:checked").val());
     });
-    $(".contenedorSwiper").fadeOut(1);
+    $(".swiperContainer").fadeOut(1);
   };
 
 

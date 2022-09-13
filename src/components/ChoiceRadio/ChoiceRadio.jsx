@@ -24,10 +24,10 @@ const ChoiceRadio = () => {
         <input type="radio" id="personal" name="worksRadio" value="personal" />
         <label htmlFor="personal">Personal</label>
       </div>
-      {/* <div className="option">
+      <div className="option">
         <input type="radio" id="labs" name="worksRadio" value="labs" />
         <label htmlFor="labs">Labs</label>
-      </div> */}
+      </div>
     </div>
   );
 };

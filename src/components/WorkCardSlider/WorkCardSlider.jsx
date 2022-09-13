@@ -20,7 +20,7 @@ const WorkCardSlider = ({ name, text, src, linkDeploy, linkRepo }) => {
           <h3>= {name} =</h3>
           <p>"{text}"</p>
           <div className="buttonWorksContainer">
-            {name !== "Full-Stack Roadmap" && (
+            {linkDeploy && (
               <MainButton link={linkDeploy} text="Visit" />
             )}
             <MainButton link={linkRepo} text="Code" />

@@ -6,6 +6,7 @@ import "./Works.scss";
 
 import { useEffect, useState } from "react";
 import $ from "jquery";
+import { collection, getDocs, getFirestore } from "firebase/firestore";
 
 // =========================  CUSTOM IMPORTS  ========================= //
 
@@ -18,45 +19,68 @@ import ChoiceRadio from "../ChoiceRadio/ChoiceRadio";
 const Works = () => {
   const [loading, setLoading] = useState(true);
   const [workArray, setWorkArray] = useState([]);
+  const [arrayWithFilter, setArrayWithFilter] = useState([]);
   const [arrayFilter, setArrayFilter] = useState("all");
 
-  const fetchData = async () => {
-    try {
-      let data = await fetch("src/work.js");
-      let parsedData = await data.json();
-      let filteredArray;
-      arrayFilter !== "all"
-        ? ((filteredArray = parsedData.filter(
-            (work) => work.label === arrayFilter
-          )))
-        : ((filteredArray = parsedData));
-      setWorkArray(filteredArray);
-      $(".contenedorSwiper").fadeIn()
-      setLoading(false);
-    } catch (err) {
-      console.error(err);
-    }
+  // ==========  GET DATA FROM DATABASE  ========== //
+
+  const getData = async () => {
+    const db = getFirestore();
+    await getDocs(collection(db, "works"))
+      .then((res) => setWorkArray(res.docs.map((item) => ({ ...item.data() }))))
+      .catch((err) => console.log(err))
+      .finally(() => setLoading(false));
   };
+
+  // ==========  FILTER DATA  ========== //
+
+  const filterArray = () => {
+    let filteredArray;
+    arrayFilter !== "all"
+      ? (filteredArray = workArray.filter((work) => work.label === arrayFilter))
+      : (filteredArray = workArray);
+    setArrayWithFilter(filteredArray);
+    $(".contenedorSwiper").fadeIn();
+  };
+
+  // ==========  GET DATA FOR FILTER  ========== //
 
   const filterArrayFunction = () => {
     $("input[type=radio][name=worksRadio]").on("change", () => {
       setArrayFilter($("input[type=radio][name=worksRadio]:checked").val());
     });
-    $(".contenedorSwiper").fadeOut(1)
+    $(".contenedorSwiper").fadeOut(1);
   };
 
+
+  // ==========  fn GET DATA  ========== //
+
   useEffect(() => {
-    fetchData();
+    getData();
+  }, []);
+
+
+  // ==========  fn FILTERS  ========== //
+
+  useEffect(() => {
     filterArrayFunction();
+    filterArray();
   }, [arrayFilter]);
 
+  
   return (
     // ----------  RETURN  ---------- //
 
     <section className="secWorks" id="secWorks">
       <h2>Works</h2>
       <ChoiceRadio />
-      {loading ? <Loading /> : <SwiperWorks arrayFromMain={workArray} />}
+      {loading ? (
+        <Loading />
+      ) : arrayFilter === "all" ? (
+        <SwiperWorks arrayFromMain={workArray} />
+      ) : (
+        <SwiperWorks arrayFromMain={arrayWithFilter} />
+      )}
     </section>
   );
 };

@@ -1,0 +1,45 @@
+.cardSliderContainer {
+    min-width: 100%;
+    min-height: 100%;
+    height: 80vh;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .textCard {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0%;
+        left: 0%;
+        display: flex;
+        background-color: rgba(0, 0, 0, .75);
+
+        .buttonWorksContainer {
+            margin-inline: auto;
+            width: 80%;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .infoCard {
+            width: 80%;
+            margin: auto;
+            margin-block: auto;
+            height: min-content;
+            text-align: center;
+
+            h3 {
+                width: max-content;
+                margin-inline: auto;
+            }
+        }
+    }
+
+}

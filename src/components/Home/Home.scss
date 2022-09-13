@@ -9,7 +9,7 @@
    height: min-content;
    width: 100%;
    display: grid;
-   grid-template-columns: 10% auto 10%;
+   grid-template-columns: 10% minmax(0, auto) 10%;
 
    h3,
    h2,

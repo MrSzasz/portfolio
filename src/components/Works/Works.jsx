@@ -22,7 +22,7 @@ const Works = () => {
 
   const fetchData = async () => {
     try {
-      let data = await fetch("src/data/work.js");
+      let data = await fetch("src/work.js");
       let parsedData = await data.json();
       let filteredArray;
       arrayFilter !== "all"

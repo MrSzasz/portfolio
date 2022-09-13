@@ -6,6 +6,7 @@
  // ==============================  WORKS CONTENT  ============================== //
 
  .secWorks {
+     min-height: 120vh;
      height: 100vh;
      display: flex;
      flex-direction: column;
@@ -15,4 +16,5 @@
      h2 {
          width: max-content;
      }
- }
+
+    }

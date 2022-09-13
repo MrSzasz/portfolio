@@ -1,6 +1,6 @@
 // =========================  STYLES  ========================= //
 
-// import "./ChoiceRadio.scss";
+import "./ChoiceRadio.scss";
 
 const ChoiceRadio = () => {
 

@@ -26,11 +26,12 @@ const Works = () => {
       let parsedData = await data.json();
       let filteredArray;
       arrayFilter !== "all"
-        ? (filteredArray = parsedData.filter(
+        ? ((filteredArray = parsedData.filter(
             (work) => work.label === arrayFilter
-          ))
-        : (filteredArray = parsedData);
+          )))
+        : ((filteredArray = parsedData));
       setWorkArray(filteredArray);
+      $(".contenedorSwiper").fadeIn()
       setLoading(false);
     } catch (err) {
       console.error(err);
@@ -41,6 +42,7 @@ const Works = () => {
     $("input[type=radio][name=worksRadio]").on("change", () => {
       setArrayFilter($("input[type=radio][name=worksRadio]:checked").val());
     });
+    $(".contenedorSwiper").fadeOut(1)
   };
 
   useEffect(() => {

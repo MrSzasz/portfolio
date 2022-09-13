@@ -50,6 +50,14 @@
      }
  }
 
+ .swiper-pagination-bullet {
+     background: ($font);
+ }
+
+ .swiper-pagination-bullet-active {
+     background: ($main);
+ }
+
  // ==============================  MEDIA QUERIES  ============================== //
 
  @media only screen and (max-width: 400px) {

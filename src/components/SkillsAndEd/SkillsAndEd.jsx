@@ -5,7 +5,6 @@ import "./SkillsAndEd.scss";
 // =========================  LIBRARIES  ========================= //
 
 import { BsCode } from "react-icons/bs";
-import { CgDatabase } from "react-icons/cg";
 import SkillsBlock from "../SkillsBlock/SkillsBlock";
 import SkillBar from "../SkillBar/SkillBar";
 
@@ -45,7 +44,10 @@ const SkillsAndEd = () => {
         <SkillsBlock>
           <SkillBar name="TYPESCRIPT" value="55" />
           <SkillBar name="FIREBASE" value="55" />
-          <SkillBar name="NODEJS" value="10" />
+          <SkillBar name="NODEJS" value="40" />
+        </SkillsBlock>
+        <SkillsBlock>
+          <SkillBar name="MONGO" value="25" />
         </SkillsBlock>
       </div>
     </section>

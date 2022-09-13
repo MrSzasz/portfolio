@@ -1,45 +1,84 @@
-.cardSliderContainer {
-    min-width: 100%;
-    min-height: 100%;
-    height: 80vh;
-    position: relative;
-    justify-content: center;
-    align-items: center;
+ // ==============================  IMPORT  ============================== //
 
-    img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
+ @import "../../styles/base.scss";
 
-    .textCard {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0%;
-        left: 0%;
-        display: flex;
-        background-color: rgba(0, 0, 0, .75);
 
-        .buttonWorksContainer {
-            margin-inline: auto;
-            width: 80%;
-            display: flex;
-            justify-content: space-around;
-        }
+ // ==============================  CARDS CONTENT  ============================== //
 
-        .infoCard {
-            width: 80%;
-            margin: auto;
-            margin-block: auto;
-            height: min-content;
-            text-align: center;
+ .cardSliderContainer {
+     min-width: 100%;
+     min-height: 100%;
+     height: 80vh;
+     position: relative;
+     justify-content: center;
+     align-items: center;
 
-            h3 {
-                width: max-content;
-                margin-inline: auto;
-            }
-        }
-    }
+     img {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+     }
 
-}
+     .textCard {
+         position: absolute;
+         width: 100%;
+         height: 100%;
+         top: 0%;
+         left: 0%;
+         display: flex;
+         background-color: rgba(0, 0, 0, .75);
+
+         .buttonWorksContainer {
+             margin-inline: auto;
+             width: 80%;
+             display: flex;
+             justify-content: space-around;
+         }
+
+         .infoCard {
+             width: 80%;
+             margin: auto;
+             margin-block: auto;
+             height: min-content;
+             text-align: center;
+
+             h3 {
+                 width: max-content;
+                 margin-inline: auto;
+             }
+         }
+     }
+ }
+
+ // ==============================  MEDIA QUERIES  ============================== //
+
+ @media only screen and (max-width: 400px) {
+     .cardSliderContainer {
+         .textCard {
+             position: absolute;
+             width: 100%;
+             height: 100%;
+             top: 0%;
+             left: 0%;
+             display: flex;
+             background-color: rgba(0, 0, 0, .75);
+
+             .buttonWorksContainer {
+                 flex-direction: column;
+                 gap: .5em;
+             }
+
+             .infoCard {
+                 p {
+                     font-size: 1em;
+                 }
+
+                 h3 {
+                     width: 100%;
+                     font-size: 1.2em;
+                     margin-inline: auto;
+                 }
+             }
+         }
+     }
+ }

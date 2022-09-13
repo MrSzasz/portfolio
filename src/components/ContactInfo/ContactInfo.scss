@@ -26,6 +26,7 @@
 
      .infoContactContainer {
          width: 100%;
+         overflow: hidden;
 
          .infoContactLinks {
              width: 100%;
@@ -46,6 +47,7 @@
                  .contactLinkGitHub {
                      &::after {
                          content: "";
+                         display: none !important;
                      }
                  }
              }

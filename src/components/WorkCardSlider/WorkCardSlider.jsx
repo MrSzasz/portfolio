@@ -1,13 +1,20 @@
-import MainButton from "../MainButton/MainButton";
+// =========================  STYLES  ========================= //
+
 import "./WorkCardSlider.scss";
+
+// =========================  CUSTOM IMPORTS  ========================= //
+
+// ----------  COMPONENTS  ---------- //
+
+import MainButton from "../MainButton/MainButton";
 
 const WorkCardSlider = ({ name, text, src, linkDeploy, linkRepo }) => {
   return (
+    
+    // ----------  RETURN  ---------- //
+    
     <div className="cardSliderContainer">
-      <img
-        src={src}
-        alt=""
-      />
+      <img src={src} alt="" />
       <div className="textCard">
         <div className="infoCard">
           <h3>= {name} =</h3>

@@ -43,11 +43,11 @@ const SkillsAndEd = () => {
         </SkillsBlock>
         <SkillsBlock>
           <SkillBar name="TYPESCRIPT" value="55" />
-          <SkillBar name="FIREBASE" value="55" />
-          <SkillBar name="NODEJS" value="40" />
+          <SkillBar name="FIREBASE" value="65" />
+          <SkillBar name="NODEJS" value="50" />
         </SkillsBlock>
         <SkillsBlock>
-          <SkillBar name="MONGO" value="25" />
+          <SkillBar name="MONGO" value="45" />
         </SkillsBlock>
       </div>
     </section>

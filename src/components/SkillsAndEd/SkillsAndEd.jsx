@@ -48,7 +48,8 @@ const SkillsAndEd = () => {
         </SkillsBlock>
         <SkillsBlock>
           <SkillBar name="MONGO" value="45" />
-          <SkillBar name="SQL" value="35" />
+          <SkillBar name="SQL" value="55" />
+          <SkillBar name="MYSQL" value="50" />
         </SkillsBlock>
       </div>
     </section>

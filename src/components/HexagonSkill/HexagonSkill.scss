@@ -4,7 +4,7 @@
 
  @mixin hoverColor($color) {
      &:hover {
-         filter: drop-shadow(0 0 25px $color);
+         filter: drop-shadow(0 0 25px $color) !important;
          stroke: $color !important;
      }
  }
@@ -100,6 +100,7 @@
                  stroke: $main;
                  stroke-width: 5px;
                  @include mainTransition;
+                 filter: drop-shadow(15px 5px 15px #000000);
 
                  &:hover {
                      fill: #1b1b1b;
@@ -116,7 +117,7 @@
      }
 
      h6 {
-        min-width: 6em;
+         min-width: 6em;
          word-wrap: break-word;
          white-space: -moz-pre-wrap;
          white-space: pre-wrap;

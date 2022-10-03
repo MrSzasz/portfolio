@@ -8,7 +8,7 @@
  .controlPosition {
      font-size: small;
      cursor: pointer;
-     transition: ease all 0.3s;
+     @include mainTransition;
      color: $disabled;
      font-weight: bold;
      user-select: none;
@@ -25,7 +25,7 @@
          border: none;
          color: $font;
          font-size: bolder;
-         transition: ease all .3s;
+         @include mainTransition;
 
          &:hover {
              color: #ff0000;

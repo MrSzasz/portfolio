@@ -9,13 +9,13 @@ const AboutMe = () => {
   return (
     <section className="secAboutMe" id="secAboutMe">
       <div className="imgAboutMe">
-        <img src="https://i.imgur.com/3uRASpN.png" alt="photo" />
+        <img src="https://i.imgur.com/3uRASpN.png" alt="profile photo" />
       </div>
       <div className="infoAboutMe">
         <div className="textInfoAboutMe">
           <h2>ABOUT ME</h2>
           <p>
-            Hi! My name is Tomas. I'm a React Front-end Developer from Argentina. I finished my studies in Coderhouse being in the TOP 10 of the course, thanks to the fact that I love programming and development, and that I was always inclined towards self-taught education, seeking to learn something new every day.
+            Hi! My name is Tomas. I'm a React Front-end Developer from Argentina. I finished my studies being in the TOP 10 of the course, thanks to the fact that I love programming and development, and that I was always inclined towards self-taught education, seeking to learn something new every day.
             Long term I would love to become a Full-stack Developer, based on a MERN stack.
           </p>
         </div>

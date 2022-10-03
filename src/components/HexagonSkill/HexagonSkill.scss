@@ -1,0 +1,134 @@
+ // ==============================  IMPORT  ============================== //
+
+ @import "../../styles/base.scss";
+
+ @mixin hoverColor($color) {
+     &:hover {
+         filter: drop-shadow(0 0 25px $color);
+         stroke: $color !important;
+     }
+ }
+
+
+ // ==============================  SKILLS COLORS  ============================== //
+
+ .htmlColor {
+     @include hoverColor(#D84924);
+ }
+
+ .cssColor {
+     @include hoverColor(#2760E5);
+ }
+
+ .sassColor {
+     @include hoverColor(#C36192);
+ }
+
+ .bootstrapColor {
+     @include hoverColor(#7410EC);
+ }
+
+ .tailwindColor {
+     @include hoverColor(#35B3EB);
+ }
+
+ .javascriptColor {
+     @include hoverColor(#EAD41C);
+ }
+
+ .reactjsColor {
+     @include hoverColor(#5CCFEE);
+ }
+
+ .gitColor {
+     @include hoverColor(#E44D30);
+ }
+
+ .githubColor {
+     @include hoverColor(#F2F2F2);
+ }
+
+ .jqueryColor {
+     @include hoverColor(#1161A0);
+ }
+
+ .typescriptColor {
+     @include hoverColor(#2E72BC);
+ }
+
+ .firebaseColor {
+     @include hoverColor(#F2C129);
+ }
+
+ .nodejsColor {
+     @include hoverColor(#7CC327);
+ }
+
+ .mongodbColor {
+     @include hoverColor(#0FA14C);
+ }
+
+ .sqlColor {
+     @include hoverColor(#1478EE);
+ }
+
+ .mysqlColor {
+     @include hoverColor(#006F88);
+ }
+
+
+ // ==============================  SKILLS CONTENT  ============================== //
+
+ .skillContainer {
+     width: max-content;
+
+     .hexagonContainer {
+         position: relative;
+         width: 10em;
+         height: 10em;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+
+         .hexagonSVG {
+             fill: $background;
+             @include mainTransition;
+             overflow: visible;
+
+             path {
+                 stroke: $main;
+                 stroke-width: 5px;
+                 @include mainTransition;
+
+                 &:hover {
+                     fill: #1b1b1b;
+                 }
+             }
+         }
+
+         .iconSkill {
+             position: absolute;
+             height: 30%;
+             width: 30%;
+             pointer-events: none;
+         }
+     }
+ }
+
+
+ // ==============================  MEDIA QUERIES  ============================== //
+
+ @media only screen and (max-width: 500px) {
+     .skillContainer {
+         .hexagonContainer {
+             width: 7em;
+             height: 7em;
+
+             .iconSkill {
+                 height: 25%;
+                 width: 25%;
+             }
+         }
+     }
+ }

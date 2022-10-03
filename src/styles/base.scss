@@ -29,3 +29,7 @@
  @mixin glowText($pass) {
      text-shadow: 0 0 10px $pass;
  }
+
+ @mixin mainTransition($time:.3s) {
+    transition: ease all $time;
+ }

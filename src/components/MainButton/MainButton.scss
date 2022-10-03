@@ -10,7 +10,7 @@
      text-transform: uppercase;
      letter-spacing: 0.1em;
      padding: 10px 30px;
-     transition: 0.5s;
+     @include mainTransition;
      position: relative;
      font-size: 17px;
      background-color: #333;
@@ -56,7 +56,7 @@
      left: 80%;
      background: $background;
      transform: translateX(-50%);
-     transition: 0.5s;
+     @include mainTransition;
  }
 
  .btn-main:hover i::before {
@@ -74,7 +74,7 @@
      left: 20%;
      background: $background;
      transform: translateX(-50%);
-     transition: 0.5s;
+     @include mainTransition;
  }
 
  .btn-main:hover i::after {

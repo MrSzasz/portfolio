@@ -35,9 +35,10 @@
          width: 100%;
          height: min-content;
          display: flex;
+         flex-wrap: wrap;
          justify-content: center;
          align-items: center;
-         gap: 1rem;
+         gap: .5rem;
      }
  }
 

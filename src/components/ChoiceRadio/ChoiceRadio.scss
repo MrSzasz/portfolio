@@ -21,13 +21,13 @@
     .option {
         display: flex;
         justify-content: center;
-        transition: ease all .25s;
+        @include mainTransition;
 
         label {
             text-align: center;
             width: 100%;
             cursor: pointer;
-            transition: ease all .25s;
+            @include mainTransition;
             z-index: 900;
         }
 

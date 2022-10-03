@@ -12,7 +12,7 @@
      color: $font;
      border: none;
      border-bottom: 2px solid $disabled;
-     transition: ease all .3s;
+     @include mainTransition;
 
      &::after {
          content: "";

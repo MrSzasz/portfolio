@@ -33,7 +33,7 @@
      border: none;
      color: $font;
      font-size: bolder;
-     transition: ease all .3s;
+     @include mainTransition;
 
      &:hover {
        color: $main;

@@ -114,6 +114,13 @@
              pointer-events: none;
          }
      }
+
+     h6 {
+        min-width: 6em;
+         word-wrap: break-word;
+         white-space: -moz-pre-wrap;
+         white-space: pre-wrap;
+     }
  }
 
 

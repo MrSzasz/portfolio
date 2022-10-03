@@ -119,11 +119,11 @@
 
  // ==============================  MEDIA QUERIES  ============================== //
 
- @media only screen and (max-width: 500px) {
+ @media only screen and (max-width: 400px) {
      .skillContainer {
          .hexagonContainer {
-             width: 7em;
-             height: 7em;
+             width: 8em;
+             height: 8em;
 
              .iconSkill {
                  height: 25%;

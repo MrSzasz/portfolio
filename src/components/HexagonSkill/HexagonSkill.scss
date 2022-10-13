@@ -40,6 +40,9 @@
      @include hoverColor(#5CCFEE);
  }
 
+ .markdownColor {
+     @include hoverColor(#3f3f3f);
+ }
  .gitColor {
      @include hoverColor(#E44D30);
  }

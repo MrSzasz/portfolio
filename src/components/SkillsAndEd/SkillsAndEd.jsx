@@ -24,6 +24,7 @@ import {
   SiMysql,
   SiGithub,
   SiRedux,
+  SiMarkdown,
 } from "react-icons/si";
 
 // =========================  CUSTOM IMPORTS  ========================= //
@@ -65,6 +66,9 @@ const SkillsAndEd = () => {
         </HexagonSkill>
         <HexagonSkill skillName={"reactjs"}>
           <SiReact color={"#5CCFEE"} className="iconSkill" />
+        </HexagonSkill>
+        <HexagonSkill skillName={"markdown"}>
+          <SiMarkdown color={"#3f3f3f"} className="iconSkill" />
         </HexagonSkill>
         <HexagonSkill skillName={"git"}>
           <SiGit color={"#E44D30"} className="iconSkill" />

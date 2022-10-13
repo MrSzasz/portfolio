@@ -41,6 +41,7 @@ const SwiperWorks = ({ arrayFromMain }) => {
               src={work.src}
               linkDeploy={work.linkDeploy}
               linkRepo={work.linkRepo}
+              skills={work.skills}
             />
           </SwiperSlide>
         ))}

@@ -8,19 +8,23 @@
  .cardSliderContainer {
      min-width: 100%;
      min-height: 100%;
-     height: 80vh;
+     height: 100vh;
      position: relative;
      justify-content: center;
      align-items: center;
+     display: flex;
+     justify-content: center;
 
-     img {
+     .cardSliderBackground {
          width: 100%;
          height: 100%;
          object-fit: cover;
+         position: absolute;
+         z-index: 1;
      }
 
      .textCard {
-         position: absolute;
+         z-index: 2;
          width: 100%;
          height: 100%;
          top: 0%;
@@ -35,11 +39,26 @@
              justify-content: space-around;
          }
 
+         .SkillWorksContainer {
+             padding-top: 1em;
+             width: 100%;
+             display: flex;
+             flex-wrap: wrap;
+             justify-content: center;
+             align-items: center;
+             gap: 1em;
+
+             img {
+                 height: 2em;
+                 width: 2em;
+             }
+         }
+
          .infoCard {
              width: 80%;
              margin: auto;
              margin-block: auto;
-             height: min-content;
+             height: fit-content;
              text-align: center;
 
              h3 {
@@ -63,7 +82,7 @@
  @media only screen and (max-width: 500px) {
      .cardSliderContainer {
          .textCard {
-             position: absolute;
+
              width: 100%;
              height: 100%;
              top: 0%;
@@ -74,6 +93,21 @@
              .buttonWorksContainer {
                  flex-direction: column;
                  gap: .5em;
+             }
+
+             .SkillWorksContainer {
+                 padding-top: 1em;
+                 width: 100%;
+                 display: flex;
+                 flex-wrap: wrap;
+                 justify-content: center;
+                 align-items: center;
+                 gap: 1em;
+
+                 img {
+                     height: 1em;
+                     width: 1em;
+                 }
              }
 
              .infoCard {

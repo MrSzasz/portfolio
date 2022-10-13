@@ -3,8 +3,8 @@
 import "./AboutMe.scss";
 
 const AboutMe = () => {
-  
-  // ----------  RETURN  ---------- //
+
+// ----------  RETURN  ---------- //
 
   return (
     <section className="secAboutMe" id="secAboutMe">

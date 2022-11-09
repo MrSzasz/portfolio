@@ -17,6 +17,16 @@
 
          img {
              width: 100%;
+             border-radius: 50%;
+             border: 4px solid $main;
+            //  @include glowPurple;
+             transition: ease all .25s;
+
+             &:hover {
+                 filter: drop-shadow(0 0 10px $main) !important;
+                 stroke: $main !important;
+
+             }
          }
      }
 

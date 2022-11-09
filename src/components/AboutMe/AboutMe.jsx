@@ -9,7 +9,7 @@ const AboutMe = () => {
   return (
     <section className="secAboutMe" id="secAboutMe">
       <div className="imgAboutMe">
-        <img src="https://i.imgur.com/3uRASpN.png" alt="profile photo" />
+        <img src="https://imgur.com/U6xhGpE.png" alt="profile photo" />
       </div>
       <div className="infoAboutMe">
         <div className="textInfoAboutMe">

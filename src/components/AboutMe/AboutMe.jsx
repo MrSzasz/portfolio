@@ -20,7 +20,7 @@ const AboutMe = () => {
           </p>
         </div>
         <a 
-          href="https://drive.google.com/uc?export=download&id=1rMTB_sksGLS87dCbTXv5oSzXV0T0AE6p"
+          href="https://drive.google.com/uc?export=download&id=11eXJRdh_AuAdeeT_AmdHOEl-D8k-KfWf"
           rel="noopener noreferrer"
           target="_blank"
         >
@@ -28,7 +28,7 @@ const AboutMe = () => {
           <i></i>
         </a>
         <a 
-          href="https://drive.google.com/uc?export=download&id=1veR_bA7LRI70j-z-criUETv-lHBFo53-"
+          href="https://drive.google.com/uc?export=download&id=1IY4dqx_1L0GlR35RdN05Hq_SiFm_3RYe"
           rel="noopener noreferrer"
           target="_blank"
         >

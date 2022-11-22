@@ -21,7 +21,8 @@ const WorkCardSlider = ({ name, text, src, linkDeploy, linkRepo, skills }) => {
           <p>"{text}"</p>
           <div className="buttonWorksContainer">
             {linkDeploy && <MainButton link={linkDeploy} text="Visit" />}
-            <MainButton link={linkRepo} text="Code" />
+            {linkRepo && <MainButton link={linkRepo} text="Code" />}
+            
           </div>
           <div className="SkillWorksContainer">
             {skills.map((img, i)=>(

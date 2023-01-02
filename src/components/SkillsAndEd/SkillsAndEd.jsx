@@ -25,6 +25,7 @@ import {
   SiGithub,
   SiRedux,
   SiMarkdown,
+  SiNextdotjs
 } from "react-icons/si";
 
 // =========================  CUSTOM IMPORTS  ========================= //
@@ -38,7 +39,7 @@ const SkillsAndEd = () => {
     <section className="secSkills" id="secSkills">
       <div className="infoSkills">
         <h2>
-          <BsCode /> React Front-end Developer (1 year experience)
+          <BsCode /> React Front-end Developer (+1 year experience)
         </h2>
         <p>
           Front-end Developer based on ReactJS, HTML, and CSS with their
@@ -64,23 +65,20 @@ const SkillsAndEd = () => {
         <HexagonSkill skillName={"javascript"}>
           <SiJavascript color={"#EAD41C"} className="iconSkill" />
         </HexagonSkill>
-        <HexagonSkill skillName={"reactjs"}>
-          <SiReact color={"#5CCFEE"} className="iconSkill" />
-        </HexagonSkill>
-        <HexagonSkill skillName={"markdown"}>
-          <SiMarkdown color={"#3f3f3f"} className="iconSkill" />
-        </HexagonSkill>
-        <HexagonSkill skillName={"git"}>
-          <SiGit color={"#E44D30"} className="iconSkill" />
-        </HexagonSkill>
-        <HexagonSkill skillName={"github"}>
-          <SiGithub color={"#F2F2F2"} className="iconSkill" />
-        </HexagonSkill>
         <HexagonSkill skillName={"jquery"}>
           <SiJquery color={"#1161A0"} className="iconSkill" />
         </HexagonSkill>
+        <HexagonSkill skillName={"reactjs"}>
+          <SiReact color={"#5CCFEE"} className="iconSkill" />
+        </HexagonSkill>
         <HexagonSkill skillName={"typescript"}>
           <SiTypescript color={"#2E72BC"} className="iconSkill" />
+        </HexagonSkill>
+        <HexagonSkill skillName={"redux"}>
+          <SiRedux color={"#7248B6"} className="iconSkill" />
+        </HexagonSkill>
+        <HexagonSkill skillName={"nextjs"}>
+          <SiNextdotjs color={"#FFFFFF"} className="iconSkill" />
         </HexagonSkill>
         <HexagonSkill skillName={"firebase"}>
           <SiFirebase color={"#F2C129"} className="iconSkill" />
@@ -97,8 +95,14 @@ const SkillsAndEd = () => {
         <HexagonSkill skillName={"mysql"}>
           <SiMysql color={"#006F88"} className="iconSkill" />
         </HexagonSkill>
-        <HexagonSkill skillName={"redux"}>
-          <SiRedux color={"#7248B6"} className="iconSkill" />
+        <HexagonSkill skillName={"markdown"}>
+          <SiMarkdown color={"#3f3f3f"} className="iconSkill" />
+        </HexagonSkill>
+        <HexagonSkill skillName={"git"}>
+          <SiGit color={"#E44D30"} className="iconSkill" />
+        </HexagonSkill>
+        <HexagonSkill skillName={"github"}>
+          <SiGithub color={"#F2F2F2"} className="iconSkill" />
         </HexagonSkill>
       </div>
     </section>

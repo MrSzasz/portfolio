@@ -20,17 +20,19 @@ const AboutMe = () => {
           </p>
         </div>
         <a 
-          href="https://drive.google.com/uc?export=download&id=1k1OTSKl9RPczdqq3toD8pH9EjLO4hCte"
+          href="/docs/TomasLeandroLugoCVEng.docx"
           rel="noopener noreferrer"
           target="_blank"
+          download="Tomas L. Lugo CV.docx"
         >
           <span>Download CV (English)</span>
           <i></i>
         </a>
         <a 
-          href="https://drive.google.com/uc?export=download&id=1s6H88mV77UFZ7GiHGMoNxOuaC9N26wqX"
+          href="/docs/TomasLeandroLugoCV.docx"
           rel="noopener noreferrer"
           target="_blank"
+          download="Tomas L. Lugo CV.docx"
         >
           <span>Descargar CV (Español)</span>
           <i></i>

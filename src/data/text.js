@@ -1,7 +1,7 @@
 let es = [
     navBarHome = "INICIO",
     navBarAboutMe = "SOBRE MI",
-    navBarWorks = "PROYECTOS",
+    navBarWorks = "PROYECTOS", 
     navBarContact = "CONTACTO",
 
 

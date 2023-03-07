@@ -2,7 +2,6 @@
 import "./HexagonSkill.scss";
 
 const HexagonSkill = ({ children, skillName }) => {
-
   // ----------  RETURN  ---------- //
 
   return (

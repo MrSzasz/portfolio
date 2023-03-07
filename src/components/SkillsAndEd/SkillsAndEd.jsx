@@ -25,7 +25,9 @@ import {
   SiGithub,
   SiRedux,
   SiMarkdown,
-  SiNextdotjs
+  SiNextdotjs,
+  SiExpress,
+  SiJsonwebtokens,
 } from "react-icons/si";
 
 // =========================  CUSTOM IMPORTS  ========================= //
@@ -86,8 +88,25 @@ const SkillsAndEd = () => {
         <HexagonSkill skillName={"nodejs"}>
           <SiNodedotjs color={"#7CC327"} className="iconSkill" />
         </HexagonSkill>
+        <HexagonSkill skillName={"expressjs"}>
+          <SiExpress color={"#FFFFFF"} className="iconSkill" />
+        </HexagonSkill>
         <HexagonSkill skillName={"mongodb"}>
           <SiMongodb color={"#0FA14C"} className="iconSkill" />
+        </HexagonSkill>
+        <HexagonSkill skillName={"mongoose"}>
+          <img
+            src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mongoose/mongoose.png"
+            alt="MongooseJS Logo"
+            style={{
+              height: "4.5em",
+              position: "absolute",
+              pointerEvents: "none",
+            }}
+          />
+        </HexagonSkill>
+        <HexagonSkill skillName={"jwt"}>
+          <SiJsonwebtokens color={"#FB015B"} className="iconSkill" />
         </HexagonSkill>
         <HexagonSkill skillName={"sql"}>
           <FaDatabase color={"#1478EE"} className="iconSkill" />

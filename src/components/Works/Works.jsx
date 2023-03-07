@@ -52,13 +52,11 @@ const Works = () => {
     $(".swiperContainer").fadeOut(1);
   };
 
-
   // ==========  fn GET DATA  ========== //
 
   useEffect(() => {
     getData();
   }, []);
-
 
   // ==========  fn FILTERS  ========== //
 
@@ -67,7 +65,6 @@ const Works = () => {
     filterArray();
   }, [arrayFilter]);
 
-  
   return (
     // ----------  RETURN  ---------- //
 

@@ -1,153 +1,162 @@
- // ==============================  IMPORT  ============================== //
+// ==============================  IMPORT  ============================== //
 
- @import "../../styles/base.scss";
+@import "../../styles/base.scss";
 
- @mixin hoverColor($color) {
-     &:hover {
-         filter: drop-shadow(0 0 25px $color) !important;
-         stroke: $color !important;
-     }
- }
+@mixin hoverColor($color) {
+  &:hover {
+    filter: drop-shadow(0 0 25px $color) !important;
+    stroke: $color !important;
+  }
+}
 
+// ==============================  SKILLS COLORS  ============================== //
 
- // ==============================  SKILLS COLORS  ============================== //
+.htmlColor {
+  @include hoverColor(#d84924);
+}
 
- .htmlColor {
-     @include hoverColor(#D84924);
- }
+.cssColor {
+  @include hoverColor(#2760e5);
+}
 
- .cssColor {
-     @include hoverColor(#2760E5);
- }
+.sassColor {
+  @include hoverColor(#c36192);
+}
 
- .sassColor {
-     @include hoverColor(#C36192);
- }
+.bootstrapColor {
+  @include hoverColor(#7410ec);
+}
 
- .bootstrapColor {
-     @include hoverColor(#7410EC);
- }
+.tailwindColor {
+  @include hoverColor(#35b3eb);
+}
 
- .tailwindColor {
-     @include hoverColor(#35B3EB);
- }
+.javascriptColor {
+  @include hoverColor(#ead41c);
+}
 
- .javascriptColor {
-     @include hoverColor(#EAD41C);
- }
+.reactjsColor {
+  @include hoverColor(#5ccfee);
+}
 
- .reactjsColor {
-     @include hoverColor(#5CCFEE);
- }
+.markdownColor {
+  @include hoverColor(#3f3f3f);
+}
+.gitColor {
+  @include hoverColor(#e44d30);
+}
 
- .markdownColor {
-     @include hoverColor(#3f3f3f);
- }
- .gitColor {
-     @include hoverColor(#E44D30);
- }
+.githubColor {
+  @include hoverColor(#f2f2f2);
+}
 
- .githubColor {
-     @include hoverColor(#F2F2F2);
- }
+.jqueryColor {
+  @include hoverColor(#1161a0);
+}
 
- .jqueryColor {
-     @include hoverColor(#1161A0);
- }
+.typescriptColor {
+  @include hoverColor(#2e72bc);
+}
 
- .typescriptColor {
-     @include hoverColor(#2E72BC);
- }
+.firebaseColor {
+  @include hoverColor(#f2c129);
+}
 
- .firebaseColor {
-     @include hoverColor(#F2C129);
- }
+.nodejsColor {
+  @include hoverColor(#7cc327);
+}
 
- .nodejsColor {
-     @include hoverColor(#7CC327);
- }
+.expressjsColor {
+  @include hoverColor(#ffffff);
+}
 
- .mongodbColor {
-     @include hoverColor(#0FA14C);
- }
+.mongodbColor {
+  @include hoverColor(#0fa14c);
+}
 
- .sqlColor {
-     @include hoverColor(#1478EE);
- }
+.mongooseColor {
+  @include hoverColor(#890000);
+}
 
- .mysqlColor {
-     @include hoverColor(#006F88);
- }
+.jwtColor {
+  @include hoverColor(#fb015b);
+}
 
- .reduxColor {
-     @include hoverColor(#7248B6);
- }
+.sqlColor {
+  @include hoverColor(#1478ee);
+}
 
- .nextjsColor {
-     @include hoverColor(#FFFFFF);
- }
+.mysqlColor {
+  @include hoverColor(#006f88);
+}
 
+.reduxColor {
+  @include hoverColor(#7248b6);
+}
 
- // ==============================  SKILLS CONTENT  ============================== //
+.nextjsColor {
+  @include hoverColor(#ffffff);
+}
 
- .skillContainer {
-     width: max-content;
+// ==============================  SKILLS CONTENT  ============================== //
 
-     .hexagonContainer {
-         position: relative;
-         width: 10em;
-         height: 10em;
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-         align-items: center;
+.skillContainer {
+  width: max-content;
 
-         .hexagonSVG {
-             fill: $background;
-             @include mainTransition;
-             overflow: visible;
+  .hexagonContainer {
+    position: relative;
+    width: 10em;
+    height: 10em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-             path {
-                 stroke: $main;
-                 stroke-width: 5px;
-                 @include mainTransition;
-                 filter: drop-shadow(15px 5px 15px #000000);
+    .hexagonSVG {
+      fill: $background;
+      @include mainTransition;
+      overflow: visible;
 
-                 &:hover {
-                     fill: #1b1b1b;
-                 }
-             }
-         }
+      path {
+        stroke: $main;
+        stroke-width: 5px;
+        @include mainTransition;
+        filter: drop-shadow(15px 5px 15px #000000);
 
-         .iconSkill {
-             position: absolute;
-             height: 30%;
-             width: 30%;
-             pointer-events: none;
-         }
-     }
+        &:hover {
+          fill: #1b1b1b;
+        }
+      }
+    }
 
-     h6 {
-         min-width: 6em;
-         word-wrap: break-word;
-         white-space: -moz-pre-wrap;
-         white-space: pre-wrap;
-     }
- }
+    .iconSkill {
+      position: absolute;
+      height: 30%;
+      width: 30%;
+      pointer-events: none;
+    }
+  }
 
+  h6 {
+    min-width: 6em;
+    word-wrap: break-word;
+    white-space: -moz-pre-wrap;
+    white-space: pre-wrap;
+  }
+}
 
- // ==============================  MEDIA QUERIES  ============================== //
+// ==============================  MEDIA QUERIES  ============================== //
 
- @media only screen and (max-width: 400px) {
-     .skillContainer {
-         .hexagonContainer {
-             width: 8em;
-             height: 8em;
+@media only screen and (max-width: 400px) {
+  .skillContainer {
+    .hexagonContainer {
+      width: 8em;
+      height: 8em;
 
-             .iconSkill {
-                 height: 25%;
-                 width: 25%;
-             }
-         }
-     }
- }
+      .iconSkill {
+        height: 25%;
+        width: 25%;
+      }
+    }
+  }
+}

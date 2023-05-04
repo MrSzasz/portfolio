@@ -26,13 +26,13 @@ const Welcome = () => {
           </h3>
         </li>
         <li>
-          <h3 href="#" data-text="&nbsp;Front">
-            &nbsp;Front&nbsp;
+          <h3 href="#" data-text="&nbsp;Full">
+            &nbsp;Full&nbsp;
           </h3>
         </li>
         <li>
-          <h3 href="#" data-text="&nbsp;End">
-            &nbsp;End&nbsp;
+          <h3 href="#" data-text="&nbsp;Stack">
+            &nbsp;Stack&nbsp;
           </h3>
         </li>
         <li>

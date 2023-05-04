@@ -15,8 +15,7 @@ const AboutMe = () => {
         <div className="textInfoAboutMe">
           <h2>ABOUT ME</h2>
           <p>
-            Hi! My name is Tomas. I'm a React Front-end Developer from Argentina. I finished my studies being in the TOP 10 of the course, thanks to the fact that I love programming and development, and that I was always inclined towards self-taught education, seeking to learn something new every day.
-            Long term I would love to become a Full-stack Developer, based on a MERN stack.
+            Hi! My name is Tomas. I'm a Full-stack Developer from Argentina. I finished my studies being in the TOP 10 of the course, thanks to the fact that I love programming and development, and that I was always inclined towards self-taught education, seeking to learn something new every day.
           </p>
         </div>
         <a 

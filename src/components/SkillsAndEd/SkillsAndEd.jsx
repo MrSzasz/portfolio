@@ -41,11 +41,11 @@ const SkillsAndEd = () => {
     <section className="secSkills" id="secSkills">
       <div className="infoSkills">
         <h2>
-          <BsCode /> React Front-end Developer (+1 year experience)
+          <BsCode /> React Full-Stack Developer
         </h2>
         <p>
-          Front-end Developer based on ReactJS, HTML, and CSS with their
-          frameworks and Firebase as database.
+          Front-end Developer based on NextJS with Firebase as Database.
+          Back-end Developer based on NodeJs with MongoDB as Database.
         </p>
       </div>
       <div className="skillsLevel">

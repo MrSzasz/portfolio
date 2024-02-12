@@ -1,6 +1,5 @@
 @import "./styles/base.scss";
 
-
 // ==============================  HTML  ============================== //
 
 html {
@@ -14,14 +13,12 @@ body {
   font-family: "Varela Round", sans-serif;
 }
 
-
 // ==============================  SELECTION  ============================== //
 
 ::selection {
   background-color: $main;
   color: $font;
 }
-
 
 // ==============================  SCROLLBAR  ============================== //
 
@@ -37,3 +34,7 @@ body {
   background-color: $main;
   border-radius: 20px;
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

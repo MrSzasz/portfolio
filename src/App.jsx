@@ -1,31 +1,14 @@
-// =========================  STYLES  ========================= //
-
-import "bootstrap/dist/css/bootstrap.min.css";
-import "./App.scss";
-
-// =========================  LIBRARIES  ========================= //
-
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-
-// =========================  CUSTOM IMPORTS  ========================= //
-
-// ----------  COMPONENTS  ---------- //
-
-import NavBar from "./components/NavBar/NavBar";
-import Home from "./components/Home/Home";
-
 function App() {
+  // Redirect to new portfolio
+  setTimeout(() => {
+    window.location.href = "https://lugo-tomas-portfolio.vercel.app/";
+  }, 3000);
 
-  // ----------  RETURN  ---------- //
-  
   return (
-    <BrowserRouter>
-      <NavBar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/*" element={<Navigate to="/" replace />} />
-      </Routes>
-    </BrowserRouter>
+    <div className="flex flex-col justify-center items-center h-screen w-screen animate-pulse">
+      <h1>Hi! You're being redirected to the new portfolio...</h1>
+      <h2>Please wait...</h2>
+    </div>
   );
 }
 
